@@ -38,6 +38,22 @@
         <mxCell id="IKeAuI4-IgdpFIsU4fWA-22" value="&lt;div&gt;VARIABLES:&lt;/div&gt;&lt;div&gt;Position: coordinate&lt;/div&gt;&lt;div&gt;isActive: boolean (true until captured)&lt;/div&gt;&lt;div&gt;color&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;METHODS:&lt;/div&gt;&lt;div&gt;checkGroup()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="IKeAuI4-IgdpFIsU4fWA-21">
           <mxGeometry y="26" width="230" height="164" as="geometry" />
         </mxCell>
+        <mxCell id="IKeAuI4-IgdpFIsU4fWA-34" value="Class Space" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="kqOdI_GbfpD3FpPk4naM-20">
+          <mxGeometry x="20" y="450" width="140" height="70" as="geometry">
+            <mxRectangle x="12" y="30" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKeAuI4-IgdpFIsU4fWA-35" value="&lt;div&gt;isEmpty()&lt;/div&gt;cords: coordinate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="IKeAuI4-IgdpFIsU4fWA-34">
+          <mxGeometry y="26" width="140" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="IKeAuI4-IgdpFIsU4fWA-32" value="Class Coordinate" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="kqOdI_GbfpD3FpPk4naM-20">
+          <mxGeometry x="170" y="450" width="140" height="70" as="geometry">
+            <mxRectangle x="12" y="30" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKeAuI4-IgdpFIsU4fWA-33" value="int x&lt;div&gt;int y&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="IKeAuI4-IgdpFIsU4fWA-32">
+          <mxGeometry y="26" width="140" height="44" as="geometry" />
+        </mxCell>
         <mxCell id="IKeAuI4-IgdpFIsU4fWA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kqOdI_GbfpD3FpPk4naM-22">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="230" y="-790" as="targetPoint" />

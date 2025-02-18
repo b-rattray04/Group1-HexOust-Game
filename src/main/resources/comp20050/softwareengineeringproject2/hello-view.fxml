@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp20050.softwareengineeringproject2.HelloController">
+   <children>
+      <Polygon fill="lightgray" layoutX="300.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE">
+        <points>
+            <Double fx:value="0.0" />
+            <Double fx:value="-50.0" />
+            <Double fx:value="45.0" />
+            <Double fx:value="-25.0" />
+            <Double fx:value="45.0" />
+            <Double fx:value="25.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="-45.0" />
+            <Double fx:value="25" />
+            <Double fx:value="-45" />
+            <Double fx:value="-25.0" />
+
+        </points>
+      </Polygon>
+   </children>
+</AnchorPane>
+

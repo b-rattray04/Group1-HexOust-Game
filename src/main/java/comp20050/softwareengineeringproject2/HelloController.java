@@ -1,6 +1,7 @@
 package comp20050.softwareengineeringproject2;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.Node;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -8,12 +9,19 @@ import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Polygon;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 
 public class HelloController {
     @FXML
     private AnchorPane rootPane;
+    @FXML
+    private Circle gameCircle;
+    @FXML
+    public Button closeButton;
+
     private Color selectedColor = Color.RED; // Default color
+    private int player = 0;
 
     public Color getColor(MouseEvent mouseEvent) {
         Circle circle = (Circle) mouseEvent.getSource();
@@ -26,7 +34,18 @@ public class HelloController {
         }
     }
 
-    //unused so far was trying to mess around with a color beiing taken in and stored when a mouse click is made on the stone
+    public void changePlayer(){
+        if (player == 0){
+            selectedColor = Color.BLUE;
+            gameCircle.setFill(selectedColor);
+            player = 1;
+        } else if (player == 1){
+            selectedColor = Color.RED;
+            gameCircle.setFill(selectedColor);
+            player = 0;
+        }
+    }
+    //unused so far was trying to mess around with a color being taken in and stored when a mouse click is made on the stone
     public void selectColor(MouseEvent mouseEvent) {
         selectedColor = getColor(mouseEvent); // Store the selected color
     }
@@ -40,8 +59,9 @@ public class HelloController {
         Circle matchingCircle = findCircleByCoords(hexagonX, hexagonY);
 
         if (matchingCircle != null) {
-            matchingCircle.setFill(Color.RED);
             matchingCircle.toFront();
+            matchingCircle.setFill(selectedColor);
+            changePlayer();
         }
     }
     private Circle findCircleByCoords(double x, double y) {
@@ -55,4 +75,10 @@ public class HelloController {
         }
         return null;
         }
+
+    @FXML
+    public void handleClose(MouseEvent event) {
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        stage.close();
+    }
 }

@@ -2060,5 +2060,7 @@
                 <Font name="Chalkboard" size="24.0" />
             </font>
         </Label>
+      <Circle fill="#ff292100" layoutX="400.0" layoutY="34.6" onMouseClicked="#getColor" radius="24.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+      <Circle fill="#ff292100" layoutX="400.0" layoutY="84.6" onMouseClicked="#getColor" radius="24.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
     </children>
 </AnchorPane>

@@ -22,11 +22,12 @@ public class HelloController {
         }
     }
 
-
+    //unused so far was trying to mess around with a color beiing taken in and stored when a mouse click is made on the stone
     public void selectColor(MouseEvent mouseEvent) {
         selectedColor = getColor(mouseEvent); // Store the selected color
     }
 
+    //changes the color of the hexagons
     public void changeColor(MouseEvent click) {
         Polygon hexagon = (Polygon) click.getSource();
         hexagon.setFill(selectedColor); // Apply the selected color

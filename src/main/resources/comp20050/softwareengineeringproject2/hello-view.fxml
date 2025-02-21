@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp20050.softwareengineeringproject2.HelloController">
     <children>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="35.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="635.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -28,7 +28,7 @@
 
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -44,7 +44,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -60,7 +60,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -76,23 +76,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -140,7 +124,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -156,7 +140,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -172,7 +156,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -188,7 +172,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -204,7 +188,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="635.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -220,7 +204,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="59.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="400.0" layoutY="35.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -236,7 +220,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="161.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="610.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -252,7 +236,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="111.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -268,7 +252,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="211.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -284,7 +268,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="261.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -300,7 +284,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="361.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -316,7 +300,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="311.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -332,7 +316,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="411.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -348,7 +332,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="461.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -364,7 +348,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="561.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -380,7 +364,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="511.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -396,7 +380,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="61.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -412,7 +396,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="355.0" layoutY="60.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -428,103 +412,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="610.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -572,7 +460,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -588,7 +476,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -604,7 +492,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -620,7 +508,167 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="445.0" layoutY="60.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -668,7 +716,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -684,7 +732,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -700,7 +748,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -716,7 +764,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="136.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="310.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -732,7 +780,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="86.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -748,7 +796,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="186.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -764,7 +812,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="236.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -780,7 +828,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="336.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -796,7 +844,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="286.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -812,7 +860,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="386.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -828,7 +876,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="436.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -844,7 +892,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="486.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -860,7 +908,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="109.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -876,7 +924,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="159.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -892,7 +940,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="209.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="490.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -908,7 +956,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="309.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -924,7 +972,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="259.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -940,7 +988,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="359.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -956,7 +1004,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="409.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -972,7 +1020,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="111.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -988,7 +1036,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="161.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1004,7 +1052,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="211.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1020,7 +1068,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="311.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1036,7 +1084,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="261.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1052,7 +1100,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="361.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="265.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1068,7 +1116,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="411.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1084,7 +1132,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="137.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1100,7 +1148,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="187.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1116,7 +1164,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="237.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1132,7 +1180,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="337.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1148,7 +1196,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="287.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1164,7 +1212,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="387.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1180,7 +1228,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="437.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1196,7 +1244,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="161.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1212,7 +1260,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="211.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="535.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1228,7 +1276,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="261.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1244,7 +1292,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="361.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1260,7 +1308,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="311.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1276,7 +1324,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="411.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1292,7 +1340,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="461.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1308,7 +1356,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1324,7 +1372,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1340,7 +1388,567 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="220.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="580.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="175.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="175.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="175.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="175.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="175.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="175.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="175.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="175.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="625.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="625.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="625.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="625.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="625.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="625.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="625.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="625.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="130.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="130.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="130.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <points>
+            <Double fx:value="30" />
+            <Double fx:value="0.0" />
+            <Double fx:value="15" />
+            <Double fx:value="25.98" />
+            <Double fx:value="-15" />
+            <Double fx:value="25.98" />
+            <Double fx:value="-30" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-15" />
+            <Double fx:value="-25.98" />
+            <Double fx:value="15" />
+            <Double fx:value="-25.98" />
+        </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="130.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="130.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="130.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="130.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="670.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
+        </Polygon>
+        <Polygon fill="lightgray" layoutX="670.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1388,7 +1996,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="670.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1404,7 +2012,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="670.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1420,615 +2028,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="176.0" layoutY="159.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="176.0" layoutY="209.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="176.0" layoutY="259.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="176.0" layoutY="359.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="176.0" layoutY="309.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="176.0" layoutY="409.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="176.0" layoutY="459.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="184.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="234.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="284.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="384.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="334.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="434.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="484.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="512.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="462.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="562.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="513.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="463.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="563.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="489.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="587.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="537.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="588.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="538.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="613.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="614.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="536.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="221.0" layoutY="486.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="176.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="511.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
-            <points>
-                <Double fx:value="30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-15" />
-                <Double fx:value="25.98" />
-                <Double fx:value="-30" />
-                <Double fx:value="0.0" />
-                <Double fx:value="-15" />
-                <Double fx:value="-25.98" />
-                <Double fx:value="15" />
-                <Double fx:value="-25.98" />
-            </points>
-        </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="539.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
+        <Polygon fill="lightgray" layoutX="670.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2045,17 +2045,17 @@
             </points>
         </Polygon>
         <Button layoutX="700.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#changeColor" text="Press To Quit" />
-        <Circle fill="#ff2a1f" layoutX="60.0" layoutY="600.0" onMouseClicked="#getColor" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
-        <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER">
+        <Circle fill="#ff2a1f" layoutX="400.0" layoutY="710.0" onMouseClicked="#getColor" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+        <TextFlow prefHeight="300.0" prefWidth="300.0" textAlignment="CENTER">
             <children>
                 <Label layoutX="10.0" layoutY="15.0" text="HEX OUST">
                     <font>
-                        <Font name="Chalkboard" size="36.0" />
+                        <Font name="Chalkboard" size="50.0" />
                     </font>
                 </Label>
             </children>
         </TextFlow>
-        <Label layoutX="10.0" layoutY="550.0" text="Red To Play">
+        <Label layoutX="335.0" layoutY="725.0" text="Red To Play">
             <font>
                 <Font name="Chalkboard" size="24.0" />
             </font>

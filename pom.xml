@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                comp20050.softwareengineeringproject2/comp20050.softwareengineeringproject2.HelloApplication
+                                comp20050.softwareengineeringproject2/comp20050.SwEngProject.HexOustApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

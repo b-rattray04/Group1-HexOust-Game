@@ -1,4 +1,4 @@
-package comp20050.softwareengineeringproject2;
+package comp20050.SwEngProject;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,10 +6,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class HelloApplication extends Application {
+public class HexOustApplication extends Application {           //To start the game
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("GraphicalUserInterface.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("HexOust");
@@ -20,7 +20,5 @@ public class HelloApplication extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
+    int check = 0;
 }
-
-

@@ -1,5 +1,6 @@
 package comp20050.SwEngProject;
 
+import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.Node;
@@ -10,6 +11,7 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Polygon;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 public class BoardUIController {
     @FXML
@@ -25,8 +27,22 @@ public class BoardUIController {
 
     @FXML
     private void initialize() {
-        String css = this.getClass().getResource("/css/style.css").toExternalForm();
+        String css = this.getClass().getResource("/css/style.css").toExternalForm();        //for hover
         rootPane.getStylesheets().add(css);
+
+        closeButton.setOnMouseEntered(event -> {        //enlarged exit
+            ScaleTransition st = new ScaleTransition(Duration.millis(200), closeButton);
+            st.setToX(1.2);
+            st.setToY(1.2);
+            st.play();
+        });
+
+        closeButton.setOnMouseExited(event -> {         //enlarged exit
+            ScaleTransition st = new ScaleTransition(Duration.millis(200), closeButton);
+            st.setToX(1.0);
+            st.setToY(1.0);
+            st.play();
+        });
     }
     /*
     *public Color getColor(MouseEvent mouseEvent) {

@@ -13,6 +13,9 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BoardUIController {
     @FXML
     private AnchorPane rootPane;
@@ -25,11 +28,16 @@ public class BoardUIController {
     private Color selectedColor = Color.RED; // Default color
     private int player = 0;         // 0 = Red Player, 1 = Blue Player
 
+
+
     @FXML
     private void initialize() {
+
+        // load CSS
         String css = this.getClass().getResource("/css/style.css").toExternalForm();        //for hover
         rootPane.getStylesheets().add(css);
 
+        // hover effect for quit button
         closeButton.setOnMouseEntered(event -> {        //enlarged exit
             ScaleTransition st = new ScaleTransition(Duration.millis(200), closeButton);
             st.setToX(1.2);
@@ -61,6 +69,7 @@ public class BoardUIController {
     *}
     */
 
+    // change player after a move is made
     public void changePlayer(){
         if (player == 0){
             selectedColor = Color.BLUE;
@@ -74,9 +83,11 @@ public class BoardUIController {
             player = 0;
         }
     }
+
     //changes the color of the circles and makes them be on top of the hex board
     public void changeColor(MouseEvent click) {
         Polygon hexagon = (Polygon) click.getSource();
+
         int hexagonX = (int) (hexagon.getLayoutX() + hexagon.getTranslateX());
         int hexagonY = (int) (hexagon.getLayoutY() + hexagon.getTranslateY());
 
@@ -86,11 +97,31 @@ public class BoardUIController {
             matchingCircle.toFront();
             if ((matchingCircle.getFill() != Color.BLUE) && (matchingCircle.getFill() != Color.RED)) {
                 matchingCircle.setFill(selectedColor);
-                changePlayer();
+                System.out.println("Move made on circle with id: " + matchingCircle.getId());
+                changePlayer(); // change player after move
+
+                Board board = new Board();
+                String hexagonId = matchingCircle.getId();
+
+                int index = Integer.parseInt(hexagonId);
+
+                int[] coords = board.findCoords(index);
+
+                if (coords != null) {
+                    int x = coords[0];
+                    int y = coords[1];
+
+                    List<Hexagon> adjacentHexagons = board.findAdjacentHexagons(x, y);
+
+                    for (Hexagon hex : adjacentHexagons) {
+                        System.out.println("Adjacent Hexagon at coordinates: (" + hex.getX() + ", " + hex.getY() + ")");
+                    }
+                }
             }
         }
     }
 
+    // finds circle at coordinates
     private Circle findCircleByCoords(double x, double y) {
         for (Node node : rootPane.getChildren()) {
             if (node instanceof Circle && node.getId() != null) {
@@ -103,6 +134,7 @@ public class BoardUIController {
         return null;
     }
 
+    // close game when quit button selected
     @FXML
     public void handleClose(MouseEvent event) {
         Stage stage = (Stage) closeButton.getScene().getWindow();

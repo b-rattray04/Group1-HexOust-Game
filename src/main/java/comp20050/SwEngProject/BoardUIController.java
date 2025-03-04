@@ -53,21 +53,21 @@ public class BoardUIController {
         });
     }
     /*
-    *public Color getColor(MouseEvent mouseEvent) {
-    *    Circle circle = (Circle) mouseEvent.getSource();
-    *    Paint fill = circle.getFill(); // Get the fill color
-    *
-    *    if (fill instanceof Color color) { // Ensure it's a Color object
-    *        return color;
-    *    } else {
-    *        return Color.BLUE; // Default fallback
-    *    }
-    *}
-    *unused so far was trying to mess around with a color being taken in and stored when a mouse click is made on the stone
-    *public void selectColor(MouseEvent mouseEvent) {
-    *    selectedColor = getColor(mouseEvent); // Store the selected color
-    *}
-    */
+     *public Color getColor(MouseEvent mouseEvent) {
+     *    Circle circle = (Circle) mouseEvent.getSource();
+     *    Paint fill = circle.getFill(); // Get the fill color
+     *
+     *    if (fill instanceof Color color) { // Ensure it's a Color object
+     *        return color;
+     *    } else {
+     *        return Color.BLUE; // Default fallback
+     *    }
+     *}
+     *unused so far was trying to mess around with a color being taken in and stored when a mouse click is made on the stone
+     *public void selectColor(MouseEvent mouseEvent) {
+     *    selectedColor = getColor(mouseEvent); // Store the selected color
+     *}
+     */
 
     // change player after a move is made
     public void changePlayer(){
@@ -99,24 +99,6 @@ public class BoardUIController {
                 matchingCircle.setFill(selectedColor);
                 System.out.println("Move made on circle with id: " + matchingCircle.getId());
                 changePlayer(); // change player after move
-
-                Board board = new Board();
-                String hexagonId = matchingCircle.getId();
-
-                int index = Integer.parseInt(hexagonId);
-
-                int[] coords = board.findCoords(index);
-
-                if (coords != null) {
-                    int x = coords[0];
-                    int y = coords[1];
-
-                    List<Hexagon> adjacentHexagons = board.findAdjacentHexagons(x, y);
-
-                    for (Hexagon hex : adjacentHexagons) {
-                        System.out.println("Adjacent Hexagon at coordinates: (" + hex.getX() + ", " + hex.getY() + ")");
-                    }
-                }
             }
         }
     }

@@ -1,68 +1,52 @@
 package comp20050.SwEngProject;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Board {
+    private final Layout layout;
+    private final ArrayList<ArrayList<Point>> grid;
 
-    private final Hexagon[][] board;
-    int[] numHexes = {7, 8, 9, 10, 11, 12, 13, 12, 11, 10, 9, 8, 7};
+    public Board(double size, double originX, double originY, int sides) {
+        this.layout = new Layout(Layout.flat, new Point(size, size), new Point(originX, originY));
+        this.grid = new ArrayList<>();
 
-    public Board() {
-        board = new Hexagon[13][13];
-        initialize();
-    }
-
-    private void initialize() {
-        for(int i = 0; i < 13; i++) {
-            for (int j = 0; j < numHexes[i]; j++) {
-                board[i][j] = new Hexagon(i, j);
-            }
-        }
-    }
-
-    public Hexagon getBoard(int x, int y) {
-        if (x >= 0 && x < 13 && y >= 0 && y < numHexes[x]) {
-            return board[x][y];
-        }
-        return null;
-    }
-
-    public int[] findCoords(int index)  {
-        int current = 0;
-
-        for (int i =  0;  i < numHexes.length; i++) {
-            for (int j = 0; j < numHexes[i]; j++) {
-                if (current == index) {
-                    return new int[]{i, j};
+        for (int q = -sides; q <= sides; q++) {
+            for (int r = -sides; r <= sides; r++) {
+                for (int s = -sides; s <= sides; s++) {
+                    if (q + r + s == 0) { // Ensure valid hex coordinates
+                        Hexagon hex = new Hexagon(q, r, s);
+                        grid.add(layout.polygonCorners(hex));
+                    }
                 }
-                current++;
             }
         }
-        return null;
     }
 
-    public Hexagon getHexagon(int index) {
-        int[] coords = findCoords(index);
-        if (coords != null) {
-            return getBoard(coords[0], coords[1]);
-        }
-        return null;
-    }
-
-    public List<Hexagon> findAdjacentHexagons(int x, int y) {
-        List<Hexagon> adjacent = new ArrayList<Hexagon>();
-
-        int[][] directions = {{-1, 1}, {0, 1}, {1, 1}, {1, -1}, {0, -1}, {-1, -1}};
-
-        for (int[] direction : directions) {
-            int newX = x + direction[0];
-            int newY = y + direction[1];
-
-            if (newX >= 0 && newX < 13 && newY >= 0 && newY < numHexes[newX]) {
-                adjacent.add(getBoard(newX, newY));
+    public ArrayList<Hexagon> getNeighbors(Hexagon hex, int sides) {
+        ArrayList<Hexagon> neighbors = new ArrayList<>();
+        for (int i = 0; i < 6; i++) {
+            Hexagon neighbor = hex.adjacent(i);
+            if (Math.abs(neighbor.q) <= sides && Math.abs(neighbor.r) <= sides && Math.abs(neighbor.s) <= sides) {
+                neighbors.add(neighbor);
             }
         }
-        return adjacent;
+        return neighbors;
+    }
+
+    public ArrayList<ArrayList<Point>> getGrid() {
+        return grid;
+    }
+
+    // example of running the getNeighbours method
+    public static void main(String[] args) {
+        Board board = new Board(30, 400, 335, 3); // size = radius of hexs, origin points = centre coords, sides = num hexes from the centre
+
+        Hexagon myHex = new Hexagon(0, 0, 0);
+        ArrayList<Hexagon> adjacentHexes = board.getNeighbors(myHex, 3);
+
+        System.out.println("Neighbors of (" + myHex.q + "," + myHex.r + "," + myHex.s + "):");
+        for (Hexagon neighbor : adjacentHexes) {
+            System.out.println(" -> (" + neighbor.q + "," + neighbor.r + "," + neighbor.s + ")");
+        }
     }
 }

@@ -1,19 +1,54 @@
 package comp20050.SwEngProject;
 
+import java.util.ArrayList;
+
 public class Hexagon {
-    private final int x;
-    private final int y;
+    protected final int q;
+    protected final int r;
+    protected final int s;
 
-    public Hexagon(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public Hexagon(int q, int r, int s) {
+        this.q = q;
+        this.r = r;
+        this.s = s;
+        if (q + r + s != 0) {
+            throw new IllegalArgumentException("q + r + s must be 0.");
+        }
     }
 
-    public int getX() {
-        return x;
+    public int getQ() {
+        return q;
+    }
+    public int getR() {
+        return r;
+    }
+    public int getS() { return s; }
+
+    public Hexagon add(Hexagon h) {
+        return new Hexagon(q + h.q, r + h.r, s + h.s);
     }
 
-    public int getY() {
-        return y;
+    public Hexagon subtract(Hexagon h) {
+        return new Hexagon(q - h.q, r - h.r, s - h.s);
+    }
+
+    public int length() {
+        return (int)((Math.abs(q) + Math.abs(r) + Math.abs(s)) / 2);
+    }
+
+    public int distance(Hexagon h) {
+        return subtract(h).length();
+    }
+
+    public Hexagon adjacent(int direction)
+    {
+        return add(Hexagon.direction(direction));
+    }
+
+    static public ArrayList<Hexagon> directions = new ArrayList<Hexagon>(){{add(new Hexagon(1, 0, -1)); add(new Hexagon(1, -1, 0)); add(new Hexagon(0, -1, 1)); add(new Hexagon(-1, 0, 1)); add(new Hexagon(-1, 1, 0)); add(new Hexagon(0, 1, -1));}};
+
+    static public Hexagon direction(int direction)
+    {
+        return Hexagon.directions.get(direction);
     }
 }

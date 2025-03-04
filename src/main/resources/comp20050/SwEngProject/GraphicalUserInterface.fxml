@@ -27,134 +27,134 @@
                 <Font name="Chalkboard" size="24.0" />
             </font>
         </Label>
-        <Circle fx:id="57" fill="#ff292100" layoutX="400.0" layoutY="635.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="58" fill="#ff292100" layoutX="400.0" layoutY="585.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="59" fill="#ff292100" layoutX="400.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="60" fill="#ff292100" layoutX="400.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="61" fill="#ff292100" layoutX="400.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="62" fill="#ff292100" layoutX="400.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="63" fill="#ff292100" layoutX="400.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="64" fill="#ff292100" layoutX="400.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="65" fill="#ff292100" layoutX="400.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="66" fill="#ff292100" layoutX="400.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="67" fill="#ff292100" layoutX="400.0" layoutY="135.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="68" fill="#ff292100" layoutX="400.0" layoutY="85.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="69" fill="#ff292100" layoutX="400.0" layoutY="35.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="34" fill="#ff292100" layoutX="310.0" layoutY="585.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="35" fill="#ff292100" layoutX="310.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="36" fill="#ff292100" layoutX="310.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="37" fill="#ff292100" layoutX="310.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="38" fill="#ff292100" layoutX="310.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="39" fill="#ff292100" layoutX="310.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="40" fill="#ff292100" layoutX="310.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="41" fill="#ff292100" layoutX="310.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="42" fill="#ff292100" layoutX="310.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="43" fill="#ff292100" layoutX="310.0" layoutY="135.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="44" fill="#ff292100" layoutX="310.0" layoutY="85.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="82" fill="#ff292100" layoutX="490.0" layoutY="584.6" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="83" fill="#ff292100" layoutX="490.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="84" fill="#ff292100" layoutX="490.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="85" fill="#ff292100" layoutX="490.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="86" fill="#ff292100" layoutX="490.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="87" fill="#ff292100" layoutX="490.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="88" fill="#ff292100" layoutX="490.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="89" fill="#ff292100" layoutX="490.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="90" fill="#ff292100" layoutX="490.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="91" fill="#ff292100" layoutX="490.0" layoutY="135.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="92" fill="#ff292100" layoutX="490.0" layoutY="84.6" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="15" fill="#ff292100" layoutX="220.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="16" fill="#ff292100" layoutX="220.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="17" fill="#ff292100" layoutX="220.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="18" fill="#ff292100" layoutX="220.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="19" fill="#ff292100" layoutX="220.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="20" fill="#ff292100" layoutX="220.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="21" fill="#ff292100" layoutX="220.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="22" fill="#ff292100" layoutX="220.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="23" fill="#ff292100" layoutX="220.0" layoutY="135.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="103" fill="#ff292100" layoutX="580.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="104" fill="#ff292100" layoutX="580.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="105" fill="#ff292100" layoutX="580.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="106" fill="#ff292100" layoutX="580.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="107" fill="#ff292100" layoutX="580.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="108" fill="#ff292100" layoutX="580.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="109" fill="#ff292100" layoutX="580.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="110" fill="#ff292100" layoutX="580.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="111" fill="#ff292100" layoutX="580.0" layoutY="135.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="0" fill="#ff292100" layoutX="130.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="1" fill="#ff292100" layoutX="130.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="2" fill="#ff292100" layoutX="130.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="3" fill="#ff292100" layoutX="130.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="4" fill="#ff292100" layoutX="130.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="5" fill="#ff292100" layoutX="130.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="6" fill="#ff292100" layoutX="130.0" layoutY="185.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="120" fill="#ff292100" layoutX="670.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="121" fill="#ff292100" layoutX="670.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="122" fill="#ff292100" layoutX="670.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="123" fill="#ff292100" layoutX="670.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="124" fill="#ff292100" layoutX="670.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="125" fill="#ff292100" layoutX="670.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="126" fill="#ff292100" layoutX="670.0" layoutY="185.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="70" fill="#ff292100" layoutX="445.0" layoutY="610.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="71" fill="#ff292100" layoutX="445.0" layoutY="560.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="72" fill="#ff292100" layoutX="445.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="73" fill="#ff292100" layoutX="445.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="74" fill="#ff292100" layoutX="445.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="75" fill="#ff292100" layoutX="445.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="76" fill="#ff292100" layoutX="445.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="77" fill="#ff292100" layoutX="445.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="78" fill="#ff292100" layoutX="445.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="79" fill="#ff292100" layoutX="445.0" layoutY="160.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="80" fill="#ff292100" layoutX="445.0" layoutY="110.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="81" fill="#ff292100" layoutX="445.0" layoutY="60.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="45" fill="#ff292100" layoutX="355.0" layoutY="610.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="46" fill="#ff292100" layoutX="355.0" layoutY="560.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="47" fill="#ff292100" layoutX="355.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="48" fill="#ff292100" layoutX="355.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="49" fill="#ff292100" layoutX="355.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="50" fill="#ff292100" layoutX="355.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="51" fill="#ff292100" layoutX="355.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="52" fill="#ff292100" layoutX="355.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="53" fill="#ff292100" layoutX="355.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="54" fill="#ff292100" layoutX="355.0" layoutY="160.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="55" fill="#ff292100" layoutX="355.0" layoutY="110.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="56" fill="#ff292100" layoutX="355.0" layoutY="60.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="93" fill="#ff292100" layoutX="535.0" layoutY="560.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="94" fill="#ff292100" layoutX="535.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="95" fill="#ff292100" layoutX="535.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="96" fill="#ff292100" layoutX="535.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="97" fill="#ff292100" layoutX="535.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="98" fill="#ff292100" layoutX="535.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="99" fill="#ff292100" layoutX="535.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="100" fill="#ff292100" layoutX="535.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="101" fill="#ff292100" layoutX="535.0" layoutY="160.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="102" fill="#ff292100" layoutX="535.0" layoutY="110.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="24" fill="#ff292100" layoutX="265.0" layoutY="560.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="25" fill="#ff292100" layoutX="265.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="26" fill="#ff292100" layoutX="265.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="27" fill="#ff292100" layoutX="265.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="28" fill="#ff292100" layoutX="265.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="29" fill="#ff292100" layoutX="265.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="30" fill="#ff292100" layoutX="265.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="31" fill="#ff292100" layoutX="265.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="32" fill="#ff292100" layoutX="265.0" layoutY="160.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="33" fill="#ff292100" layoutX="265.0" layoutY="110.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="112" fill="#ff292100" layoutX="625.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="113" fill="#ff292100" layoutX="625.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="114" fill="#ff292100" layoutX="625.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="115" fill="#ff292100" layoutX="625.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="116" fill="#ff292100" layoutX="625.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="117" fill="#ff292100" layoutX="625.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="118" fill="#ff292100" layoutX="625.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="119" fill="#ff292100" layoutX="625.0" layoutY="160.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="7" fill="#ff292100" layoutX="175.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="8" fill="#ff292100" layoutX="175.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="9" fill="#ff292100" layoutX="175.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="10" fill="#ff292100" layoutX="175.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="11" fill="#ff292100" layoutX="175.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="12" fill="#ff292100" layoutX="175.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="13" fill="#ff292100" layoutX="175.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Circle fx:id="14" fill="#ff292100" layoutX="175.0" layoutY="159.6" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="635.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Circle fx:id="0" fill="#ff292100" layoutX="400.0" layoutY="635.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="1" fill="#ff292100" layoutX="400.0" layoutY="585.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="2" fill="#ff292100" layoutX="400.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="3" fill="#ff292100" layoutX="400.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="4" fill="#ff292100" layoutX="400.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="5" fill="#ff292100" layoutX="400.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="6" fill="#ff292100" layoutX="400.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="7" fill="#ff292100" layoutX="400.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="8" fill="#ff292100" layoutX="400.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="9" fill="#ff292100" layoutX="400.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="10" fill="#ff292100" layoutX="400.0" layoutY="135.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="11" fill="#ff292100" layoutX="400.0" layoutY="85.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="12" fill="#ff292100" layoutX="400.0" layoutY="35.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="13" fill="#ff292100" layoutX="310.0" layoutY="585.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="14" fill="#ff292100" layoutX="310.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="15" fill="#ff292100" layoutX="310.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="16" fill="#ff292100" layoutX="310.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="17" fill="#ff292100" layoutX="310.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="18" fill="#ff292100" layoutX="310.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="19" fill="#ff292100" layoutX="310.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="20" fill="#ff292100" layoutX="310.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="21" fill="#ff292100" layoutX="310.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="22" fill="#ff292100" layoutX="310.0" layoutY="135.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="23" fill="#ff292100" layoutX="310.0" layoutY="85.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="24" fill="#ff292100" layoutX="490.0" layoutY="584.6" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="25" fill="#ff292100" layoutX="490.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="26" fill="#ff292100" layoutX="490.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="27" fill="#ff292100" layoutX="490.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="28" fill="#ff292100" layoutX="490.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="29" fill="#ff292100" layoutX="490.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="30" fill="#ff292100" layoutX="490.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="31" fill="#ff292100" layoutX="490.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="32" fill="#ff292100" layoutX="490.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="33" fill="#ff292100" layoutX="490.0" layoutY="135.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="34" fill="#ff292100" layoutX="490.0" layoutY="84.6" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="35" fill="#ff292100" layoutX="220.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="36" fill="#ff292100" layoutX="220.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="37" fill="#ff292100" layoutX="220.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="38" fill="#ff292100" layoutX="220.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="39" fill="#ff292100" layoutX="220.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="40" fill="#ff292100" layoutX="220.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="41" fill="#ff292100" layoutX="220.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="42" fill="#ff292100" layoutX="220.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="43" fill="#ff292100" layoutX="220.0" layoutY="135.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="44" fill="#ff292100" layoutX="580.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="45" fill="#ff292100" layoutX="580.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="46" fill="#ff292100" layoutX="580.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="47" fill="#ff292100" layoutX="580.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="48" fill="#ff292100" layoutX="580.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="49" fill="#ff292100" layoutX="580.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="50" fill="#ff292100" layoutX="580.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="51" fill="#ff292100" layoutX="580.0" layoutY="185.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="52" fill="#ff292100" layoutX="580.0" layoutY="135.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="53" fill="#ff292100" layoutX="130.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="54" fill="#ff292100" layoutX="130.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="55" fill="#ff292100" layoutX="130.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="56" fill="#ff292100" layoutX="130.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="57" fill="#ff292100" layoutX="130.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="58" fill="#ff292100" layoutX="130.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="59" fill="#ff292100" layoutX="130.0" layoutY="185.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="60" fill="#ff292100" layoutX="670.0" layoutY="485.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="61" fill="#ff292100" layoutX="670.0" layoutY="435.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="62" fill="#ff292100" layoutX="670.0" layoutY="385.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="63" fill="#ff292100" layoutX="670.0" layoutY="335.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="64" fill="#ff292100" layoutX="670.0" layoutY="285.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="65" fill="#ff292100" layoutX="670.0" layoutY="235.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="66" fill="#ff292100" layoutX="670.0" layoutY="185.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="67" fill="#ff292100" layoutX="445.0" layoutY="610.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="68" fill="#ff292100" layoutX="445.0" layoutY="560.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="69" fill="#ff292100" layoutX="445.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="70" fill="#ff292100" layoutX="445.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="71" fill="#ff292100" layoutX="445.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="72" fill="#ff292100" layoutX="445.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="73" fill="#ff292100" layoutX="445.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="74" fill="#ff292100" layoutX="445.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="75" fill="#ff292100" layoutX="445.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="76" fill="#ff292100" layoutX="445.0" layoutY="160.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="77" fill="#ff292100" layoutX="445.0" layoutY="110.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="78" fill="#ff292100" layoutX="445.0" layoutY="60.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="79" fill="#ff292100" layoutX="355.0" layoutY="610.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="80" fill="#ff292100" layoutX="355.0" layoutY="560.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="81" fill="#ff292100" layoutX="355.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="82" fill="#ff292100" layoutX="355.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="83" fill="#ff292100" layoutX="355.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="84" fill="#ff292100" layoutX="355.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="85" fill="#ff292100" layoutX="355.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="86" fill="#ff292100" layoutX="355.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="87" fill="#ff292100" layoutX="355.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="88" fill="#ff292100" layoutX="355.0" layoutY="160.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="89" fill="#ff292100" layoutX="355.0" layoutY="110.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="90" fill="#ff292100" layoutX="355.0" layoutY="60.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="91" fill="#ff292100" layoutX="535.0" layoutY="560.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="92" fill="#ff292100" layoutX="535.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="93" fill="#ff292100" layoutX="535.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="94" fill="#ff292100" layoutX="535.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="95" fill="#ff292100" layoutX="535.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="96" fill="#ff292100" layoutX="535.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="97" fill="#ff292100" layoutX="535.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="98" fill="#ff292100" layoutX="535.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="99" fill="#ff292100" layoutX="535.0" layoutY="160.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="100" fill="#ff292100" layoutX="535.0" layoutY="110.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="101" fill="#ff292100" layoutX="265.0" layoutY="560.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="102" fill="#ff292100" layoutX="265.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="103" fill="#ff292100" layoutX="265.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="104" fill="#ff292100" layoutX="265.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="105" fill="#ff292100" layoutX="265.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="106" fill="#ff292100" layoutX="265.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="107" fill="#ff292100" layoutX="265.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="108" fill="#ff292100" layoutX="265.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="109" fill="#ff292100" layoutX="265.0" layoutY="160.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="110" fill="#ff292100" layoutX="265.0" layoutY="110.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="111" fill="#ff292100" layoutX="625.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="112" fill="#ff292100" layoutX="625.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="113" fill="#ff292100" layoutX="625.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="114" fill="#ff292100" layoutX="625.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="115" fill="#ff292100" layoutX="625.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="116" fill="#ff292100" layoutX="625.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="117" fill="#ff292100" layoutX="625.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="118" fill="#ff292100" layoutX="625.0" layoutY="160.0" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="119" fill="#ff292100" layoutX="175.0" layoutY="510.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="120" fill="#ff292100" layoutX="175.0" layoutY="460.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="121" fill="#ff292100" layoutX="175.0" layoutY="410.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="122" fill="#ff292100" layoutX="175.0" layoutY="360.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="123" fill="#ff292100" layoutX="175.0" layoutY="310.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="124" fill="#ff292100" layoutX="175.0" layoutY="260.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="125" fill="#ff292100" layoutX="175.0" layoutY="210.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Circle fx:id="126" fill="#ff292100" layoutX="175.0" layoutY="159.6" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
+        <Polygon fx:id= "0_6_m6" fill="lightgray" layoutX="400.0" layoutY="635.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -170,7 +170,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_5_m5" fill="lightgray" layoutX="400.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -186,7 +186,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_4_m4" fill="lightgray" layoutX="400.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -202,7 +202,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_3_m3" fill="lightgray" layoutX="400.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -218,7 +218,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_2_m2" fill="lightgray" layoutX="400.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -234,7 +234,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_1_m1" fill="lightgray" layoutX="400.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -250,7 +250,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_0_0" fill="lightgray" layoutX="400.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -266,7 +266,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_m1_1" fill="lightgray" layoutX="400.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -282,7 +282,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_m2_2" fill="lightgray" layoutX="400.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -298,7 +298,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_m3_3" fill="lightgray" layoutX="400.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -314,7 +314,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_m4_4" fill="lightgray" layoutX="400.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -330,7 +330,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_m5_5" fill="lightgray" layoutX="400.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -346,7 +346,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="400.0" layoutY="35.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "0_m6_6" fill="lightgray" layoutX="400.0" layoutY="35.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -362,7 +362,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="610.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_6_m5" fill="lightgray" layoutX="355.0" layoutY="610.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -378,7 +378,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_5_m4" fill="lightgray" layoutX="355.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -394,7 +394,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_4_m3" fill="lightgray" layoutX="355.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -410,7 +410,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_3_m2" fill="lightgray" layoutX="355.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -426,7 +426,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_2_m1" fill="lightgray" layoutX="355.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -442,7 +442,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_1_0" fill="lightgray" layoutX="355.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -458,7 +458,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_0_1" fill="lightgray" layoutX="355.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -474,7 +474,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_m1_2" fill="lightgray" layoutX="355.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -490,7 +490,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "m1_m2_3" fill="lightgray" layoutX="355.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -506,7 +506,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m1_m3_4" fill="lightgray" layoutX="355.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -522,7 +522,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m1_m4_5" fill="lightgray" layoutX="355.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -538,7 +538,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="355.0" layoutY="60.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m1_m5_6" fill="lightgray" layoutX="355.0" layoutY="60.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -554,7 +554,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="610.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_5_m6" fill="lightgray" layoutX="445.0" layoutY="610.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -570,7 +570,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_4_m5" fill="lightgray" layoutX="445.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -586,7 +586,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_3_m4" fill="lightgray" layoutX="445.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -602,7 +602,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_2_m3" fill="lightgray" layoutX="445.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -618,7 +618,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_1_m2" fill="lightgray" layoutX="445.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -634,7 +634,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_0_m1" fill="lightgray" layoutX="445.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -650,7 +650,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id= "1_m1_0" fill="lightgray" layoutX="445.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -666,7 +666,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_m2_1" fill="lightgray" layoutX="445.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -682,7 +682,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_m3_2" fill="lightgray" layoutX="445.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -698,7 +698,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_m4_3" fill="lightgray" layoutX="445.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -714,7 +714,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_m5_4" fill="lightgray" layoutX="445.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -730,7 +730,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="445.0" layoutY="60.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="1_m6_5" fill="lightgray" layoutX="445.0" layoutY="60.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -746,7 +746,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_6_m4" fill="lightgray" layoutX="310.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -762,7 +762,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_5_m3" fill="lightgray" layoutX="310.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -778,7 +778,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_4_m2" fill="lightgray" layoutX="310.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -794,7 +794,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_3_m1" fill="lightgray" layoutX="310.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -810,7 +810,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_2_0" fill="lightgray" layoutX="310.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -826,7 +826,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_1_1" fill="lightgray" layoutX="310.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -842,7 +842,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_0_2" fill="lightgray" layoutX="310.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -858,7 +858,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_m1_3" fill="lightgray" layoutX="310.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -874,7 +874,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_m2_4" fill="lightgray" layoutX="310.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -890,7 +890,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_m3_5" fill="lightgray" layoutX="310.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -906,7 +906,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="310.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m2_m4_6" fill="lightgray" layoutX="310.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -922,7 +922,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_4_m6" fill="lightgray" layoutX="490.0" layoutY="585.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -938,7 +938,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_3_m5" fill="lightgray" layoutX="490.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -954,7 +954,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_2_m4" fill="lightgray" layoutX="490.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -970,7 +970,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_1_m3" fill="lightgray" layoutX="490.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -986,7 +986,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_0_m2" fill="lightgray" layoutX="490.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1002,7 +1002,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_m1_m1" fill="lightgray" layoutX="490.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1018,7 +1018,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_m2_0" fill="lightgray" layoutX="490.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1034,7 +1034,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_m3_1" fill="lightgray" layoutX="490.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1050,7 +1050,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_m4_2" fill="lightgray" layoutX="490.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1066,7 +1066,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_m5_3" fill="lightgray" layoutX="490.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1082,7 +1082,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="490.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="2_m6_4" fill="lightgray" layoutX="490.0" layoutY="85.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1098,7 +1098,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_6_m3" fill="lightgray" layoutX="265.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1114,7 +1114,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_5_m2" fill="lightgray" layoutX="265.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1130,7 +1130,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_4_m1" fill="lightgray" layoutX="265.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1146,7 +1146,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_3_0" fill="lightgray" layoutX="265.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1162,7 +1162,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_2_1" fill="lightgray" layoutX="265.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1178,7 +1178,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_1_2" fill="lightgray" layoutX="265.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1194,7 +1194,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_0_3" fill="lightgray" layoutX="265.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1210,7 +1210,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_m1_4" fill="lightgray" layoutX="265.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1226,7 +1226,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_m2_5" fill="lightgray" layoutX="265.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1242,7 +1242,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="265.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m3_m3_6" fill="lightgray" layoutX="265.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1258,7 +1258,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_3_m6" fill="lightgray" layoutX="535.0" layoutY="560.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1274,7 +1274,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_2_m5" fill="lightgray" layoutX="535.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1290,7 +1290,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_1_m4" fill="lightgray" layoutX="535.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1306,7 +1306,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_0_m3" fill="lightgray" layoutX="535.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1322,7 +1322,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_m1_m2" fill="lightgray" layoutX="535.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1338,7 +1338,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_m2_m1" fill="lightgray" layoutX="535.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1354,7 +1354,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_m3_0" fill="lightgray" layoutX="535.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1370,7 +1370,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_m4_1" fill="lightgray" layoutX="535.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1386,7 +1386,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_m5_2" fill="lightgray" layoutX="535.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1402,7 +1402,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="535.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="3_m6_3" fill="lightgray" layoutX="535.0" layoutY="110.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1418,7 +1418,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_6_m2" fill="lightgray" layoutX="220.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1434,7 +1434,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_5_m1" fill="lightgray" layoutX="220.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1450,7 +1450,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_4_0" fill="lightgray" layoutX="220.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1466,7 +1466,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_3_1" fill="lightgray" layoutX="220.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1482,7 +1482,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_2_2" fill="lightgray" layoutX="220.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1498,7 +1498,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_1_3" fill="lightgray" layoutX="220.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1514,7 +1514,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_0_4" fill="lightgray" layoutX="220.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1530,7 +1530,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_m1_5" fill="lightgray" layoutX="220.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1546,7 +1546,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="220.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m4_m2_6" fill="lightgray" layoutX="220.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1562,7 +1562,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_2_m6" fill="lightgray" layoutX="580.0" layoutY="535.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1578,7 +1578,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_1_m5" fill="lightgray" layoutX="580.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1594,7 +1594,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_0_m4" fill="lightgray" layoutX="580.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1610,7 +1610,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_m1_m3" fill="lightgray" layoutX="580.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1626,7 +1626,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_m2_m2" fill="lightgray" layoutX="580.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1642,7 +1642,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_m3_m1" fill="lightgray" layoutX="580.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1658,7 +1658,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_m4_0" fill="lightgray" layoutX="580.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1674,7 +1674,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_m5_1" fill="lightgray" layoutX="580.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1690,7 +1690,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="580.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="4_m6_2" fill="lightgray" layoutX="580.0" layoutY="135.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1706,7 +1706,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="175.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m5_6_m1" fill="lightgray" layoutX="175.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1722,7 +1722,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="175.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m5_5_0" fill="lightgray" layoutX="175.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1738,7 +1738,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="175.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m5_4_1" fill="lightgray" layoutX="175.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1754,7 +1754,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="175.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m5_3_2" fill="lightgray" layoutX="175.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1770,7 +1770,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="175.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m5_2_3" fill="lightgray" layoutX="175.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1786,7 +1786,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="175.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m5_1_4" fill="lightgray" layoutX="175.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1802,7 +1802,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="175.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m5_0_5" fill="lightgray" layoutX="175.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1818,7 +1818,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="175.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m5_m1_6" fill="lightgray" layoutX="175.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1834,7 +1834,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="5_1_m6" fill="lightgray" layoutX="625.0" layoutY="510.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1850,7 +1850,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="5_0_m5" fill="lightgray" layoutX="625.0" layoutY="460.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1866,7 +1866,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="5_m1_m4" fill="lightgray" layoutX="625.0" layoutY="410.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1882,7 +1882,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="5_m2_m3" fill="lightgray" layoutX="625.0" layoutY="360.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1898,7 +1898,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="5_m3_m2" fill="lightgray" layoutX="625.0" layoutY="310.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1914,7 +1914,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="5_m4_m1" fill="lightgray" layoutX="625.0" layoutY="260.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1930,7 +1930,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="5_m5_0" fill="lightgray" layoutX="625.0" layoutY="210.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1946,7 +1946,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="625.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="5_m6_1" fill="lightgray" layoutX="625.0" layoutY="160.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1962,7 +1962,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m6_6_0" fill="lightgray" layoutX="130.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1978,7 +1978,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m6_5_1" fill="lightgray" layoutX="130.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -1994,23 +1994,23 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="130.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
-        <points>
-            <Double fx:value="30" />
-            <Double fx:value="0.0" />
-            <Double fx:value="15" />
-            <Double fx:value="25.98" />
-            <Double fx:value="-15" />
-            <Double fx:value="25.98" />
-            <Double fx:value="-30" />
-            <Double fx:value="0.0" />
-            <Double fx:value="-15" />
-            <Double fx:value="-25.98" />
-            <Double fx:value="15" />
-            <Double fx:value="-25.98" />
-        </points>
+        <Polygon fx:id="m6_4_2" fill="lightgray" layoutX="130.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+            <points>
+                <Double fx:value="30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-15" />
+                <Double fx:value="25.98" />
+                <Double fx:value="-30" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-15" />
+                <Double fx:value="-25.98" />
+                <Double fx:value="15" />
+                <Double fx:value="-25.98" />
+            </points>
         </Polygon>
-        <Polygon id="hex4" fill="lightgray" layoutX="130.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m6_3_3" fill="lightgray" layoutX="130.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2026,7 +2026,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon id="hex3" fill="lightgray" layoutX="130.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m6_2_4" fill="lightgray" layoutX="130.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2042,7 +2042,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon id="hex2" fill="lightgray" layoutX="130.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m6_1_5" fill="lightgray" layoutX="130.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2058,7 +2058,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon id="hex1" fill="lightgray" layoutX="130.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="m6_0_6" fill="lightgray" layoutX="130.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2074,7 +2074,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHexHex">
+        <Polygon fx:id="6_0_m6" fill="lightgray" layoutX="670.0" layoutY="485.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHexHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2090,7 +2090,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="6_m1_m5" fill="lightgray" layoutX="670.0" layoutY="435.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2106,7 +2106,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="6_m2_m4" fill="lightgray" layoutX="670.0" layoutY="385.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2122,7 +2122,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="6_m3_m3" fill="lightgray" layoutX="670.0" layoutY="335.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2138,7 +2138,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="6_m4_m2" fill="lightgray" layoutX="670.0" layoutY="285.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2154,7 +2154,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="6_m5_m1" fill="lightgray" layoutX="670.0" layoutY="235.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />
@@ -2170,7 +2170,7 @@
                 <Double fx:value="-25.98" />
             </points>
         </Polygon>
-        <Polygon fill="lightgray" layoutX="670.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
+        <Polygon fx:id="6_m6_0" fill="lightgray" layoutX="670.0" layoutY="185.0" onMouseClicked="#changeColor" stroke="BLACK" strokeType="INSIDE" styleClass="hoverHex">
             <points>
                 <Double fx:value="30" />
                 <Double fx:value="0.0" />

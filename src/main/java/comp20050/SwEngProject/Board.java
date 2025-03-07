@@ -1,5 +1,6 @@
 package comp20050.SwEngProject;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Board {
@@ -22,6 +23,7 @@ public class Board {
         }
     }
 
+
     public ArrayList<Hexagon> getNeighbors(Hexagon hex, int sides) {
         ArrayList<Hexagon> neighbors = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
@@ -36,6 +38,8 @@ public class Board {
     public ArrayList<ArrayList<Point>> getGrid() {
         return grid;
     }
+
+
 
     // example of running the getNeighbours method
     public static void main(String[] args) {

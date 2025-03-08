@@ -212,13 +212,13 @@ public class BoardUIController {
         } else if (x == 6) {
             return isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4);
         } else if (y == 6) {
-            return isAdjacentOccupied(hex, 5) || isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2);
-        } else if (y == -6) {
-            return isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5);
-        } else if (z == -6) {
             return isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5) || isAdjacentOccupied(hex, 0);
-        } else if (z == 6) {
+        } else if (y == -6) {
             return isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3);
+        } else if (z == -6) {
+            return isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5);
+        } else if (z == 6) {
+            return isAdjacentOccupied(hex, 5) || isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2);
         }
 
         // Non-edge case

@@ -164,16 +164,14 @@ public class BoardUIController {
             hex.setOccupied(true);
             invalidMove.setText("");
             changeColor(event);
-            System.out.println("11111");
         } else {
             invalidMove.setText("Invalid move");
-            System.out.println("22222");
         }
     }
     public Hexagon getHexagonAt(int q, int r, int s) {
         for (Node node : rootPane.getChildren()) {
             if (node instanceof Polygon) {
-                Hexagon hex = (Hexagon) ((Polygon) node).getUserData();
+                Hexagon hex = (Hexagon) node.getUserData();
                 if (hex != null && hex.getQ() == q && hex.getR() == r && hex.getS() == s) {
                     return hex;
                 }

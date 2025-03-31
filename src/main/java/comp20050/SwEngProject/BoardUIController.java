@@ -33,7 +33,6 @@ public class BoardUIController {
 
     @FXML
     private void initialize() {
-
         // load CSS
         String css = this.getClass().getResource("/css/style.css").toExternalForm();        //for hover
         rootPane.getStylesheets().add(css);
@@ -55,34 +54,18 @@ public class BoardUIController {
 
         initialiseHex();
     }
+
+    // Assigns each hexagon in the UI a hexagon object and adds event listeners
     private void initialiseHex() {
         for (Node node : rootPane.getChildren()) {
             if (node instanceof Polygon) {
                 Polygon hexagon = (Polygon) node;
-                Hexagon hex = splitCoords(hexagon.getId());
-                hexagon.setUserData(hex);
-                hexagon.setOnMouseClicked(this::onMouseClicked);
+                Hexagon hex = splitCoords(hexagon.getId()); // convert ID into hex coordinates
+                hexagon.setUserData(hex); // store hex data in Polygon
+                hexagon.setOnMouseClicked(this::onMouseClicked); // click event handler
             }
         }
     }
-
-
-    /*
-     *public Color getColor(MouseEvent mouseEvent) {
-     *    Circle circle = (Circle) mouseEvent.getSource();
-     *    Paint fill = circle.getFill(); // Get the fill color
-     *
-     *    if (fill instanceof Color color) { // Ensure it's a Color object
-     *        return color;
-     *    } else {
-     *        return Color.BLUE; // Default fallback
-     *    }
-     *}
-     *unused so far was trying to mess around with a color being taken in and stored when a mouse click is made on the stone
-     *public void selectColor(MouseEvent mouseEvent) {
-     *    selectedColor = getColor(mouseEvent); // Store the selected color
-     *}
-     */
 
     // change player after a move is made
     public void changePlayer(){
@@ -118,6 +101,7 @@ public class BoardUIController {
         }
     }
 
+    // display hexagon coords on UI display
     public Hexagon showCoords(MouseEvent click) {
         Polygon clickedPolygon = (Polygon) click.getSource();
         Hexagon hex = (Hexagon) clickedPolygon.getUserData();
@@ -129,7 +113,7 @@ public class BoardUIController {
         return hex;
     }
 
-
+    // Parses hexagon ID string into hexagon object
     public static Hexagon splitCoords(String coordString) {
         String[] parts = coordString.split("_");
         int[] values = new int[3];
@@ -145,19 +129,26 @@ public class BoardUIController {
         return new Hexagon(values[0], values[1], values[2]);
     }
 
-    // finds circle at coordinates
+    // finds circle (player's stone) at given x,y coordinates
     private Circle findCircleByCoords(double x, double y) {
+        // loop through all nodes in rootPane (game board) -> contains all UI elements of the board: Hexagons (Polygon), Circles (game pieces), etc
+        // loops through all child nodes to find a circle
         for (Node node : rootPane.getChildren()) {
+            // if the object is a circle, and it is a placed game piece
             if (node instanceof Circle && node.getId() != null) {
-                Circle circle = (Circle) node;
+                Circle circle = (Circle) node;// converts node to a circle object via a cast
+                // compare circle's position to given x,y coords
+                // layoutX = x coord of the circle, layoutY = y coord of circle
+                // if circle is very close to given coords, assume it is correct to account for any small errors
                 if (Math.abs(circle.getLayoutX() - x) < 1 && Math.abs(circle.getLayoutY() - y) < 1) {
-                    return circle;
+                    return circle; // if circle is found, return it
                 }
             }
         }
-        return null;
+        return null; // otherwise return null
     }
 
+    // Handles hexagon clicks, validates a move and updates the board
     public void onMouseClicked(MouseEvent event) {
         Hexagon hex = showCoords(event);
         if (!hasAdjacentOccupied(hex)) {
@@ -168,71 +159,31 @@ public class BoardUIController {
             invalidMove.setText("Invalid move");
         }
     }
-    public Hexagon getHexagonAt(int q, int r, int s) {
-        for (Node node : rootPane.getChildren()) {
-            if (node instanceof Polygon) {
-                Hexagon hex = (Hexagon) node.getUserData();
-                if (hex != null && hex.getQ() == q && hex.getR() == r && hex.getS() == s) {
-                    return hex;
+
+    // checks if any adjacent hexagon is occupied by current player's colour
+    public boolean hasAdjacentOccupied(Hexagon hex) {
+        // check if current hexagon is already occupied
+        if (hex.isOccupied()) return false;
+        // loop through all possible adjacent hexagons using directions stored in the directions ArrayList in Hexagon class
+        for (Hexagon dir : Hexagon.directions) {
+            // Uses helper method getHexagonNode in Utilities class to find a hexagon at calculated coords
+            // adds dir (direction) values to the hex coords to get coords of neighbour hexagons
+            // if there is no adjacent hexagon at the position, adjacent is null
+            Polygon adjacent = Utilities.getHexagonNode(rootPane, hex.getQ() + dir.getQ(), hex.getR() + dir.getR(), hex.getS() + dir.getS());
+            // if adjacent is not null i.e. if there is an adjacent hexagon
+            if (adjacent != null) {
+                // finds Circle (player's stone) placed on that hexagon using findCircleByCoords method
+                // value will be null if there is no stone on that hexagon
+                Circle adjacentCircle = findCircleByCoords(adjacent.getLayoutX() + adjacent.getTranslateX(), adjacent.getLayoutY() + adjacent.getTranslateY());
+                // if there is a circle on the adjacent hexagon, check the colour
+                // if the colour is the same as the current player's colour, return true i.e. adjacent hexagon is occupied
+                if (adjacentCircle != null && adjacentCircle.getFill().equals(selectedColor)) {
+                    return true;
                 }
             }
         }
-        return null; // Return null if no matching hexagon is found
+        return false; // otherwise return false
     }
-
-    public boolean hasAdjacentOccupied(Hexagon hex) {
-        if (hex.isOccupied()) {
-            return false;
-        }
-
-        int x = hex.getQ();
-        int y = hex.getR();
-        int z = hex.getS();
-
-        // Corner cases
-        if (x == -6 && y == 6 && z == 0) {
-            return isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5) || isAdjacentOccupied(hex, 0);
-        } else if (x == -6 && y == 0 && z == 6) {
-            return isAdjacentOccupied(hex, 5) || isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1);
-        } else if (x == 0 && y == -6 && z == 6) {
-            return isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2);
-        } else if (x == 6 && y == -6 && z == 0) {
-            return isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3);
-        } else if (x == 6 && y == 0 && z == -6) {
-            return isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4);
-        } else if (x == 0 && y == 6 && z == -6) {
-            return isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5);
-        }
-
-        // Edge cases
-        else if (x == -6) {
-            return isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5) || isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1);
-        } else if (x == 6) {
-            return isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4);
-        } else if (y == 6) {
-            return isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5) || isAdjacentOccupied(hex, 0);
-        } else if (y == -6) {
-            return isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3);
-        } else if (z == -6) {
-            return isAdjacentOccupied(hex, 2) || isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5);
-        } else if (z == 6) {
-            return isAdjacentOccupied(hex, 5) || isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2);
-        }
-
-        // Non-edge case
-        else {
-            return isAdjacentOccupied(hex, 0) || isAdjacentOccupied(hex, 1) || isAdjacentOccupied(hex, 2) ||
-                    isAdjacentOccupied(hex, 3) || isAdjacentOccupied(hex, 4) || isAdjacentOccupied(hex, 5);
-        }
-    }
-
-    private boolean isAdjacentOccupied(Hexagon hex, int direction) {
-        int[][] directions = {{1,0,-1}, {0,1,-1}, {-1,1,0}, {-1,0,1}, {0,-1,1}, {1,-1,0}};
-        int[] dir = directions[direction];
-        Hexagon adjacent = getHexagonAt(hex.getQ() + dir[0], hex.getR() + dir[1], hex.getS() + dir[2]);
-        return adjacent != null && adjacent.isOccupied();
-    }
-
 
     // close game when quit button selected
     @FXML

@@ -6,9 +6,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class HexOustApplication extends Application {           //To start the game
+/*
+ * main class for launching game
+ * initialises and displays the UI
+ */
+public class HexOustApplication extends Application {
+    //To start the game
     @Override
     public void start(Stage stage) throws Exception {
+        // load GUI from FXML file
         Parent root = FXMLLoader.load(getClass().getResource("GraphicalUserInterface.fxml")); // loads UI
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -17,8 +23,8 @@ public class HexOustApplication extends Application {           //To start the g
         stage.show();
     }
 
+    // launches JavaFX application
     public static void main(String[] args) {
         launch(args);
     } // launch game
-    int check = 0;
 }

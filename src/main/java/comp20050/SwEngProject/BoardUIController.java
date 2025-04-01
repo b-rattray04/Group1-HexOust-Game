@@ -151,7 +151,7 @@ public class BoardUIController {
     // Handles hexagon clicks, validates a move and updates the board
     public void onMouseClicked(MouseEvent event) {
         Hexagon hex = showCoords(event);
-        if (!hasAdjacentOccupied(hex)) {
+        if (validCapture(hex)) {
             hex.setOccupied(true);
             invalidMove.setText("");
             changeColor(event);
@@ -185,6 +185,41 @@ public class BoardUIController {
         return false; // otherwise return false
     }
 
+    public boolean validCapture(Hexagon hex) {
+        int blueCount = 0;
+        int redCount = 0;
+        if (selectedColor == Color.BLUE) blueCount++;
+        if (selectedColor == Color.RED) redCount++;
+
+        for (Hexagon dir : Hexagon.directions) {
+            // Calculate neighbor coordinates
+            int q = hex.getQ() + dir.getQ();
+            int r = hex.getR() + dir.getR();
+            int s = hex.getS() + dir.getS();
+
+            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
+            // Check for stone on adjacent hex
+            Circle adjacentCircle = findCircleByCoords(
+                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
+                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
+            );
+
+            if (adjacentCircle != null) {
+                Color adjacentColor = (Color) adjacentCircle.getFill();
+                if (adjacentColor == Color.RED) redCount++;
+                if (adjacentColor == Color.BLUE) blueCount++;
+                System.out.println("Blue" + blueCount);
+                System.out.println("Red" + redCount);
+                // Count opponent pieces that can be captured
+                if (selectedColor == Color.RED) {
+                    if (redCount > blueCount) return true;
+                } else if (selectedColor == Color.BLUE){
+                    if (redCount < blueCount) return true;
+                } else return false;
+            }
+        }
+        return false;
+    }
     // close game when quit button selected
     @FXML
     public void handleClose(MouseEvent event) {

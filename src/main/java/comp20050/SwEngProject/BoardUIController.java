@@ -109,7 +109,7 @@ public class BoardUIController {
             String coords = "Q: " + hex.getQ() + ", R: " + hex.getR() + ", S: " + hex.getS();
             Coords.setText(coords);
         }
-            System.out.println("Coordinates: q=" + hex.getQ() + ", r=" + hex.getR() + ", s=" + hex.getS());
+        System.out.println("Coordinates: q=" + hex.getQ() + ", r=" + hex.getR() + ", s=" + hex.getS());
         return hex;
     }
 
@@ -151,7 +151,7 @@ public class BoardUIController {
     // Handles hexagon clicks, validates a move and updates the board
     public void onMouseClicked(MouseEvent event) {
         Hexagon hex = showCoords(event);
-        if (validCapture(hex)) {
+        if (validCapture(hex) || (!hasAdjacentOccupied(hex))) {
             hex.setOccupied(true);
             invalidMove.setText("");
             changeColor(event);
@@ -199,6 +199,11 @@ public class BoardUIController {
 
             Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
             // Check for stone on adjacent hex
+
+            if(adjacentHex == null) {
+                continue;
+            }
+
             Circle adjacentCircle = findCircleByCoords(
                     adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
                     adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
@@ -208,18 +213,22 @@ public class BoardUIController {
                 Color adjacentColor = (Color) adjacentCircle.getFill();
                 if (adjacentColor == Color.RED) redCount++;
                 if (adjacentColor == Color.BLUE) blueCount++;
-                System.out.println("Blue" + blueCount);
-                System.out.println("Red" + redCount);
-                // Count opponent pieces that can be captured
-                if (selectedColor == Color.RED) {
-                    if (redCount > blueCount) return true;
-                } else if (selectedColor == Color.BLUE){
-                    if (redCount < blueCount) return true;
-                } else return false;
+
             }
         }
+
+        System.out.println("Blue" + blueCount);
+        System.out.println("Red" + redCount);
+        // Count opponent pieces that can be captured
+        if (selectedColor == Color.RED) {
+            if (redCount > blueCount) return true;
+        } else if (selectedColor == Color.BLUE){
+            if (redCount < blueCount) return true;
+        } else return false;
+
         return false;
     }
+
     // close game when quit button selected
     @FXML
     public void handleClose(MouseEvent event) {

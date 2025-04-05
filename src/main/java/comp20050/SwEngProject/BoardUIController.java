@@ -174,7 +174,10 @@ public class BoardUIController {
             hex.setOccupied(true);
             invalidMove.setText("NonCapture Successful");
             changeColor(event);
-        } else {
+        }
+
+        //shouldnt reach here
+        else {
             invalidMove.setText("SHOULDNT HAVE HAPPENED");
         }
     }
@@ -263,6 +266,7 @@ public class BoardUIController {
         int blueCount = 0;
         int redCount = 0;
 
+
         for (Hexagon dir : Hexagon.directions) {
             // Calculate neighbor coordinates
             int q = hex.getQ() + dir.getQ();
@@ -294,15 +298,31 @@ public class BoardUIController {
         // Count opponent pieces that can be captured
 
         if(blueCount == 0 && redCount == 0) {
+            //in the case of no neighbours, then is an invalid move
             return false;
         }
-        if (selectedColor == Color.RED) {
-            redCount++;
-            if (redCount > blueCount) return true;
-        } else if (selectedColor == Color.BLUE){
-            blueCount++;
-            if (redCount < blueCount) return true;
-        } else return false;
+
+        if(selectedColor == Color.RED) {
+            if(redCount != 0 && blueCount == 0) {
+                //in the case of only having red neighbours, invalid move
+                return false;
+            } else if (redCount == blueCount) {
+                //in this case there is an equal amount of red and blue neightbours so adding another red makes a bigger group
+                return true;
+            }
+        }
+
+        if(selectedColor == Color.BLUE) {
+            if(blueCount != 0 && redCount == 0) {
+                //in case of only having blue neighbours, invalid move
+                return false;
+            } else if(blueCount == redCount) {
+                //in this case there is an equal amount of red and blue neightbours so adding another red makes a bigger group
+                return true;
+            }
+        }
+
+
 
         return false;
     }

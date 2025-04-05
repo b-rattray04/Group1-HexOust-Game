@@ -13,6 +13,9 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class BoardUIController {
     @FXML
     private AnchorPane rootPane;
@@ -148,16 +151,87 @@ public class BoardUIController {
         return null; // otherwise return null
     }
 
-    // Handles hexagon clicks, validates a move and updates the board
     public void onMouseClicked(MouseEvent event) {
         Hexagon hex = showCoords(event);
-        if (validCapture(hex) || (!hasAdjacentOccupied(hex))) {
-            hex.setOccupied(true);
-            invalidMove.setText("");
-            changeColor(event);
-        } else {
+
+        if(hex != null){
+            invalidMove.setText("Stone already here");
+        }
+
+        if (nonCaptureMove(hex) == false && validCapture(hex) == false) {
             invalidMove.setText("Invalid move");
         }
+        //check if it is a capture move first
+        else if(nonCaptureMove(hex) == false && validCapture(hex) == true) {
+            hex.setOccupied(true);
+            invalidMove.setText("Capture Successful");
+            changeColor(event);
+            //go back to the same player that made the move
+            changePlayer();
+        }
+        //then check if it is a non capture move
+        else if(nonCaptureMove(hex) == true && validCapture(hex) == false) {
+            hex.setOccupied(true);
+            invalidMove.setText("NonCapture Successful");
+            changeColor(event);
+        } else {
+            invalidMove.setText("SHOULDNT HAVE HAPPENED");
+        }
+    }
+
+    public boolean nonCaptureMove(Hexagon hex) {
+        //just the amount of coloured neighbours, no including the stone being placed
+        int blueCount = 0;
+        int redCount = 0;
+
+        for (Hexagon dir : Hexagon.directions) {
+            // Calculate neighbor coordinates
+            int q = hex.getQ() + dir.getQ();
+            int r = hex.getR() + dir.getR();
+            int s = hex.getS() + dir.getS();
+
+            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
+            // Check for stone on adjacent hex
+
+            if(adjacentHex == null) {
+                continue;
+            }
+
+            Circle adjacentCircle = findCircleByCoords(
+                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
+                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
+            );
+
+            if (adjacentCircle != null) {
+                Color adjacentColor = (Color) adjacentCircle.getFill();
+                if (adjacentColor == Color.RED) redCount++;
+                if (adjacentColor == Color.BLUE) blueCount++;
+
+            }
+        }
+
+        System.out.println("Red: " + redCount +  " | Blue: " + blueCount);
+
+        //if the circle has no neighbours then its a non capture move
+        if(blueCount == 0 && redCount == 0) {
+            return true;
+        }
+
+        if(selectedColor == Color.RED) {
+            if(redCount == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } else if(selectedColor == Color.BLUE) {
+            if(blueCount == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        return false;
     }
 
     // checks if any adjacent hexagon is occupied by current player's colour
@@ -188,8 +262,6 @@ public class BoardUIController {
     public boolean validCapture(Hexagon hex) {
         int blueCount = 0;
         int redCount = 0;
-        if (selectedColor == Color.BLUE) blueCount++;
-        if (selectedColor == Color.RED) redCount++;
 
         for (Hexagon dir : Hexagon.directions) {
             // Calculate neighbor coordinates
@@ -217,17 +289,25 @@ public class BoardUIController {
             }
         }
 
-        System.out.println("Blue" + blueCount);
-        System.out.println("Red" + redCount);
+        System.out.println("Blue before placement " + blueCount);
+        System.out.println("Red before placement " + redCount);
         // Count opponent pieces that can be captured
+
+        if(blueCount == 0 && redCount == 0) {
+            return false;
+        }
         if (selectedColor == Color.RED) {
+            redCount++;
             if (redCount > blueCount) return true;
         } else if (selectedColor == Color.BLUE){
+            blueCount++;
             if (redCount < blueCount) return true;
         } else return false;
 
         return false;
     }
+
+
 
     // close game when quit button selected
     @FXML
@@ -235,4 +315,6 @@ public class BoardUIController {
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
     }
+
+
 }

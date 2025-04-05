@@ -1,6 +1,7 @@
 package comp20050.SwEngProject;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 // represents hexagon tile in the grid
 // Uses axial coords q,r,s
@@ -80,7 +81,17 @@ public class Hexagon {
     {
         return Hexagon.directions.get(direction);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Hexagon hex = (Hexagon) o;
+        return q == hex.q && r == hex.r && s == hex.s;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(q, r, s);
+    }
 }
-
-
-

@@ -44,27 +44,6 @@ public class Hexagon {
         return r;
     }
     public int getS() { return s; }
-
-    // returns new hexagon object that is the sum of this hexagon and another
-    public Hexagon add(Hexagon h) {
-        return new Hexagon(q + h.q, r + h.r, s + h.s);
-    }
-
-    // returns new hexagon object that is the difference of this hexagon and another
-    public Hexagon subtract(Hexagon h) {
-        return new Hexagon(q - h.q, r - h.r, s - h.s);
-    }
-
-    // Calculates distance of this hexagon from the origin
-    public int length() {
-        return ((Math.abs(q) + Math.abs(r) + Math.abs(s)) / 2);
-    }
-
-    // Calculates distance to another hexagon (h = target hexagon)
-    public int distance(Hexagon h) {
-        return subtract(h).length();
-    }
-
     /*
     predefined directions for hexagonal grid using axial coords
     (1, 0, -1): SE    0
@@ -75,12 +54,6 @@ public class Hexagon {
     (1, -1, 0): NE    5
      */
     static public ArrayList<Hexagon> directions = new ArrayList<Hexagon>(){{add(new Hexagon(1, 0, -1)); add(new Hexagon(0, 1, -1)); add(new Hexagon(-1, 1, 0)); add(new Hexagon(-1, 0, 1)); add(new Hexagon(0, -1, 1)); add(new Hexagon(1, -1, 0));}};
-
-    // Retrieves hexagon direction for a given index in the ArrayList i.e. direction(0) returns (1,0,-1)
-    static public Hexagon direction(int direction)
-    {
-        return Hexagon.directions.get(direction);
-    }
 
     @Override
     public boolean equals(Object o) {

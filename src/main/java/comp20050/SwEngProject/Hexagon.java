@@ -1,17 +1,13 @@
 package comp20050.SwEngProject;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
-// represents hexagon tile in the grid
-// Uses axial coords q,r,s
 public class Hexagon {
-    protected final int q; // coordinate q
-    protected final int r; // coordinate r
-    protected final int s; // coordinate s
-    private boolean occupied = false; // track if hexagon is occupied
+    protected final int q;
+    protected final int r;
+    protected final int s;
+    private boolean occupied = false;
 
-    // constructs hexagon with given coords, throws exception if their sum != 0
     public Hexagon(int q, int r, int s) {
         this.q = q;
         this.r = r;
@@ -21,50 +17,32 @@ public class Hexagon {
         }
     }
 
-    // marks hexagon as occupied -> true if occupied, false if not
     public void setOccupied(boolean occupied) {
         this.occupied = true;
     }
 
-    // marks hexagon as unoccupied -> true if unoccupied, false if not
-    public void setUnoccupied(boolean unoccupied) {
-        this.occupied = false;
-    }
-
-    // checks if hexagon is occupied -> true if occupied, false if not
     public boolean isOccupied() {
         return occupied;
     }
 
-    // getters for coords
     public int getQ() {
         return q;
     }
+
     public int getR() {
         return r;
     }
-    public int getS() { return s; }
-    /*
-    predefined directions for hexagonal grid using axial coords
-    (1, 0, -1): SE    0
-    (0, 1, -1): S     1
-    (-1, 1, 0): SW    2
-    (-1, 0, 1): NW    3
-    (0, -1, 1): N     4
-    (1, -1, 0): NE    5
-     */
-    static public ArrayList<Hexagon> directions = new ArrayList<Hexagon>(){{add(new Hexagon(1, 0, -1)); add(new Hexagon(0, 1, -1)); add(new Hexagon(-1, 1, 0)); add(new Hexagon(-1, 0, 1)); add(new Hexagon(0, -1, 1)); add(new Hexagon(1, -1, 0));}};
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Hexagon hex = (Hexagon) o;
-        return q == hex.q && r == hex.r && s == hex.s;
+    public int getS() {
+        return s;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(q, r, s);
-    }
+    static public ArrayList<Hexagon> directions = new ArrayList<Hexagon>() {{
+        add(new Hexagon(1, 0, -1));     // SE 0
+        add(new Hexagon(0, 1, -1));     // S  1
+        add(new Hexagon(-1, 1, 0));     // SW 2
+        add(new Hexagon(-1, 0, 1));     // NW 3
+        add(new Hexagon(0, -1, 1));     // N  4
+        add(new Hexagon(1, -1, 0));     // NE 5
+    }};
 }

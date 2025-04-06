@@ -14,13 +14,9 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class BoardUIController {
-    // Game variables
     private Color selectedColor = Color.RED;
     private boolean redTurn = true;
-
-    // Game logic instance
     private GameLogic gameLogic;
-
     @FXML
     private AnchorPane rootPane;
     @FXML
@@ -34,7 +30,6 @@ public class BoardUIController {
     @FXML
     private Label invalidMove;
 
-    // close game when quit button selected
     @FXML
     public void handleClose(MouseEvent event) {
         Stage stage = (Stage) closeButton.getScene().getWindow();
@@ -47,14 +42,14 @@ public class BoardUIController {
         rootPane.getStylesheets().add(css);
 
         // hover effect for quit button
-        closeButton.setOnMouseEntered(event -> {        //enlarged exit
+        closeButton.setOnMouseEntered(event -> {
             ScaleTransition st = new ScaleTransition(Duration.millis(200), closeButton);
             st.setToX(1.2);
             st.setToY(1.2);
             st.play();
         });
 
-        closeButton.setOnMouseExited(event -> {         //enlarged exit
+        closeButton.setOnMouseExited(event -> {
             ScaleTransition st = new ScaleTransition(Duration.millis(200), closeButton);
             st.setToX(1.0);
             st.setToY(1.0);
@@ -62,25 +57,21 @@ public class BoardUIController {
         });
 
         initialiseHex();
-
-        // Initialize game logic
         gameLogic = new GameLogic(rootPane);
         gameLogic.setSelectedColor(selectedColor);
     }
 
-    // Assigns each hexagon in the UI a hexagon object and adds event listeners
     private void initialiseHex() {
         for (Node node : rootPane.getChildren()) {
             if (node instanceof Polygon) {
                 Polygon hexagon = (Polygon) node;
-                Hexagon hex = splitCoords(hexagon.getId()); // convert ID into hex coordinates
-                hexagon.setUserData(hex); // store hex data in Polygon
-                hexagon.setOnMouseClicked(this::onMouseClicked); // click event handler
+                Hexagon hex = splitCoords(hexagon.getId());
+                hexagon.setUserData(hex);
+                hexagon.setOnMouseClicked(this::onMouseClicked);
             }
         }
     }
 
-    // changes player's turn
     private void changePlayer() {
         if (redTurn) {
             selectedColor = Color.BLUE;
@@ -93,12 +84,9 @@ public class BoardUIController {
             gameCircle.setFill(Color.RED);
             redTurn = true;
         }
-
-        // Update game logic with new player color
         gameLogic.setSelectedColor(selectedColor);
     }
 
-    //changes the color of the circles and makes them be on top of the hex board
     public void changeColor(MouseEvent click) {
         Polygon hexagon = (Polygon) click.getSource();
 
@@ -111,13 +99,10 @@ public class BoardUIController {
             matchingCircle.toFront();
             if ((matchingCircle.getFill() != Color.BLUE) && (matchingCircle.getFill() != Color.RED)) {
                 matchingCircle.setFill(selectedColor);
-                System.out.println("Move made on circle with id: " + matchingCircle.getId());
-                // Player change will be handled in onMouseClicked
             }
         }
     }
 
-    // display hexagon coords on UI display
     public Hexagon showCoords(MouseEvent click) {
         Polygon clickedPolygon = (Polygon) click.getSource();
         Hexagon hex = (Hexagon) clickedPolygon.getUserData();
@@ -125,11 +110,9 @@ public class BoardUIController {
             String coords = "Q: " + hex.getQ() + ", R: " + hex.getR() + ", S: " + hex.getS();
             Coords.setText(coords);
         }
-        System.out.println("Coordinates: q=" + hex.getQ() + ", r=" + hex.getR() + ", s=" + hex.getS());
         return hex;
     }
 
-    // Parses hexagon ID string into hexagon object
     public static Hexagon splitCoords(String coordString) {
         String[] parts = coordString.split("_");
         int[] values = new int[3];
@@ -152,16 +135,15 @@ public class BoardUIController {
             return;
         }
 
-        // Update game logic with current player color
         gameLogic.setSelectedColor(selectedColor);
 
-        if (gameLogic.nonCaptureMove(hex) == true) {
+        if (gameLogic.nonCaptureMove(hex)) {
             hex.setOccupied(true);
             invalidMove.setText("Non-Capture Move");
             changeColor(event);
             changePlayer();
         }
-        else if (gameLogic.nonCaptureMove(hex) == false && gameLogic.validCapture(hex) == true) {
+        else if (!gameLogic.nonCaptureMove(hex) && gameLogic.validCapture(hex)) {
             hex.setOccupied(true);
             invalidMove.setText("Capture Move");
             changeColor(event);

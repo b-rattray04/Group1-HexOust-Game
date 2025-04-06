@@ -20,6 +20,7 @@ public class Hexagon {
     public void setOccupied(boolean occupied) {
         this.occupied = true;
     }
+    public void setUnoccupied(boolean occupied) {this.occupied = false;}
 
     public boolean isOccupied() {
         return occupied;

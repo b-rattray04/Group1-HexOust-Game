@@ -78,189 +78,65 @@ public class GameLogic {
     }
 
     public boolean validCapture(Hexagon hex) {
-        int blueCount = 0;
-        int redCount = 0;
-
         // Get opponent color
         Color opponentColor = (selectedColor == Color.RED) ? Color.BLUE : Color.RED;
 
-        // Track adjacent opponent stones to check for capture
-        Set<Hexagon> adjacentOpponentHexes = new HashSet<>();
+        // Step 1: Find all hexagons in the friendly group (including the newly placed stone)
+        Set<Hexagon> friendlyGroup = new HashSet<>();
+        friendlyGroup.add(hex); // Add the newly placed stone
 
-        for (Hexagon dir : Hexagon.directions) {
-            // Calculate neighbor coordinates
-            int q = hex.getQ() + dir.getQ();
-            int r = hex.getR() + dir.getR();
-            int s = hex.getS() + dir.getS();
+        // Find all connected friendly stones
+        findConnectedGroup(hex, selectedColor, friendlyGroup);
+        int friendlyGroupSize = friendlyGroup.size();
 
-            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
-            if(adjacentHex == null) continue;
+        System.out.println("Friendly group size in validCapture: " + friendlyGroupSize);
 
-            Circle adjacentCircle = Utilities.findCircleByCoords(
-                    rootPane,
-                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
-                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
-            );
-
-            if (adjacentCircle != null) {
-                Color adjacentColor = (Color) adjacentCircle.getFill();
-                if (adjacentColor == Color.RED) {
-                    redCount++;
-
-                    // If opponent is red, add to opponent hexes
-                    if (opponentColor == Color.RED) {
-                        Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
-                        adjacentOpponentHexes.add(adjacentHexagon);
-                    }
-                }
-                if (adjacentColor == Color.BLUE) {
-                    blueCount++;
-
-                    // If opponent is blue, add to opponent hexes
-                    if (opponentColor == Color.BLUE) {
-                        Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
-                        adjacentOpponentHexes.add(adjacentHexagon);
-                    }
-                }
-            }
-        }
-
-        System.out.println("Blue before placement " + blueCount);
-        System.out.println("Red before placement " + redCount);
-
-        // Basic validation checks
-        if (blueCount == 0 && redCount == 0) {
-            // No neighbors, invalid capture move
-            return false;
-        }
-
-        if (selectedColor == Color.RED && redCount != 0 && blueCount == 0) {
-            // Only red neighbors for red player, invalid capture
-            return false;
-        }
-
-        if (selectedColor == Color.BLUE && blueCount != 0 && redCount == 0) {
-            // Only blue neighbors for blue player, invalid capture
-            return false;
-        }
-
-        // If there are no opponent stones adjacent, can't capture
-        if (adjacentOpponentHexes.isEmpty()) {
-            return false;
-        }
-
-        // Calculate the size of the friendly group (including the new stone)
-        int friendlyGroupSize = 1; // Start with 1 for the new stone being placed
-        Set<Hexagon> visited = new HashSet<>();
-
-        // Add connected friendly stones to calculate group size
-        for (Hexagon dir : Hexagon.directions) {
-            int q = hex.getQ() + dir.getQ();
-            int r = hex.getR() + dir.getR();
-            int s = hex.getS() + dir.getS();
-
-            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
-            if (adjacentHex == null) continue;
-
-            Circle adjacentCircle = Utilities.findCircleByCoords(
-                    rootPane,
-                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
-                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
-            );
-
-            if (adjacentCircle != null && adjacentCircle.getFill() == selectedColor) {
-                Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
-                if (!visited.contains(adjacentHexagon)) {
-                    friendlyGroupSize += findConnectedGroupSize(adjacentHexagon, selectedColor, visited);
-                }
-            }
-        }
-
-        // Check if we can capture any opponent group
-        boolean canCapture = false;
+        // Step 2: Find all distinct opponent groups adjacent to the friendly group
         Set<Hexagon> processedOpponentHexes = new HashSet<>();
+        
+        // For each stone in the friendly group
+        for (Hexagon friendlyHex : friendlyGroup) {
+            // Check all neighbors
+            for (Hexagon dir : Hexagon.directions) {
+                int q = friendlyHex.getQ() + dir.getQ();
+                int r = friendlyHex.getR() + dir.getR();
+                int s = friendlyHex.getS() + dir.getS();
 
-        for (Hexagon opponentHex : adjacentOpponentHexes) {
-            if (!processedOpponentHexes.contains(opponentHex)) {
-                // Find the size of this opponent group
-                Set<Hexagon> opponentGroupVisited = new HashSet<>();
-                int opponentGroupSize = findConnectedGroupSize(opponentHex, opponentColor, opponentGroupVisited);
+                Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
+                if (adjacentHex == null) continue;
 
-                // Add all visited hexes to processed set to avoid recounting
-                processedOpponentHexes.addAll(opponentGroupVisited);
+                Circle adjacentCircle = Utilities.findCircleByCoords(
+                        rootPane,
+                        adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
+                        adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
+                );
 
-                System.out.println("Friendly group size: " + friendlyGroupSize + ", Opponent group size: " + opponentGroupSize);
+                // If this is an opponent stone and we haven't processed its group yet
+                if (adjacentCircle != null && adjacentCircle.getFill() == opponentColor) {
+                    Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
 
-                // If our group is larger than this opponent group, we can capture it
-                if (friendlyGroupSize > opponentGroupSize) {
-                    canCapture = true;
-                    break;
+                    if (!processedOpponentHexes.contains(adjacentHexagon)) {
+                        // Find all stones in this opponent group
+                        Set<Hexagon> opponentGroup = new HashSet<>();
+                        findConnectedGroup(adjacentHexagon, opponentColor, opponentGroup);
+
+                        // Add all to processed set to avoid recounting
+                        processedOpponentHexes.addAll(opponentGroup);
+
+                        int opponentGroupSize = opponentGroup.size();
+                        System.out.println("Opponent group size in validCapture: " + opponentGroupSize);
+
+                        // If our group is larger, we can capture this opponent group
+                        if (friendlyGroupSize > opponentGroupSize) {
+                            return true;
+                        }
+                    }
                 }
             }
         }
 
-        return canCapture;
-    }
-
-    // Recursively finds the size of a connected group of stones of the same color
-    private int findConnectedGroupSize(Hexagon hex, Color color, Set<Hexagon> visited) {
-        visited.add(hex);
-
-        int groupSize = 1;
-
-        // Check all neighbors
-        for (Hexagon dir : Hexagon.directions) {
-            int q = hex.getQ() + dir.getQ();
-            int r = hex.getR() + dir.getR();
-            int s = hex.getS() + dir.getS();
-
-            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
-            if (adjacentHex == null) continue;
-
-            Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
-            if (visited.contains(adjacentHexagon)) continue; // Skip already visited hexagons
-
-            Circle adjacentCircle = Utilities.findCircleByCoords(
-                    rootPane,
-                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
-                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
-            );
-
-            // If this neighbor has a stone of the same color, recursively add its group
-            if (adjacentCircle != null && adjacentCircle.getFill() == color) {
-                groupSize += findConnectedGroupSize(adjacentHexagon, color, visited);
-            }
-        }
-        return groupSize;
-    }
-
-    private void findConnectedGroup(Hexagon hex, Color color, Set<Hexagon> group) {
-        // Add this hexagon to the group
-        group.add(hex);
-
-        // Check all neighbors
-        for (Hexagon dir : Hexagon.directions) {
-            int q = hex.getQ() + dir.getQ();
-            int r = hex.getR() + dir.getR();
-            int s = hex.getS() + dir.getS();
-
-            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
-            if (adjacentHex == null) continue;
-
-            Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
-            if (group.contains(adjacentHexagon)) continue; // Skip already visited hexagons
-
-            Circle adjacentCircle = Utilities.findCircleByCoords(
-                    rootPane,
-                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
-                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
-            );
-
-            // If this neighbor has a stone of the same color, recursively add it to the group
-            if (adjacentCircle != null && adjacentCircle.getFill() == color) {
-                findConnectedGroup(adjacentHexagon, color, group);
-            }
-        }
+        // If we reach here, no opponent groups can be captured
+        return false;
     }
 
     public void removeCircles(Hexagon hexagon) {
@@ -344,5 +220,66 @@ public class GameLogic {
         }
 
         System.out.println("Removed " + circlesToRemove.size() + " opponent stones");
+    }
+
+    private void findConnectedGroup(Hexagon hex, Color color, Set<Hexagon> group) {
+        // Add this hexagon to the group
+        group.add(hex);
+
+        // Check all neighbors
+        for (Hexagon dir : Hexagon.directions) {
+            int q = hex.getQ() + dir.getQ();
+            int r = hex.getR() + dir.getR();
+            int s = hex.getS() + dir.getS();
+
+            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
+            if (adjacentHex == null) continue;
+
+            Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
+            if (group.contains(adjacentHexagon)) continue; // Skip already visited hexagons
+
+            Circle adjacentCircle = Utilities.findCircleByCoords(
+                    rootPane,
+                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
+                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
+            );
+
+            // If this neighbor has a stone of the same color, recursively add it to the group
+            if (adjacentCircle != null && adjacentCircle.getFill() == color) {
+                findConnectedGroup(adjacentHexagon, color, group);
+            }
+        }
+    }
+
+    // Recursively finds the size of a connected group of stones of the same color
+    private int findConnectedGroupSize(Hexagon hex, Color color, Set<Hexagon> visited) {
+        visited.add(hex);
+
+        int groupSize = 1;
+
+        // Check all neighbors
+        for (Hexagon dir : Hexagon.directions) {
+            int q = hex.getQ() + dir.getQ();
+            int r = hex.getR() + dir.getR();
+            int s = hex.getS() + dir.getS();
+
+            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
+            if (adjacentHex == null) continue;
+
+            Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
+            if (visited.contains(adjacentHexagon)) continue; // Skip already visited hexagons
+
+            Circle adjacentCircle = Utilities.findCircleByCoords(
+                    rootPane,
+                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
+                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
+            );
+
+            // If this neighbor has a stone of the same color, recursively add its group
+            if (adjacentCircle != null && adjacentCircle.getFill() == color) {
+                groupSize += findConnectedGroupSize(adjacentHexagon, color, visited);
+            }
+        }
+        return groupSize;
     }
 }

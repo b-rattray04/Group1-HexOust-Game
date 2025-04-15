@@ -37,6 +37,16 @@
                 <Font name="Chalkboard" size="24.0" />
             </font>
         </Label>
+        <Label fx:id="redStoneCountLabel" layoutX="50.0" layoutY="10.0" text="Red Stones: 0" textFill="RED">
+            <font>
+                <Font name="Chalkboard" size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="blueStoneCountLabel" layoutX="50.0" layoutY="40.0" text="Blue Stones: 0" textFill="BLUE">
+            <font>
+                <Font name="Chalkboard" size="16.0" />
+            </font>
+        </Label>
         <Circle fx:id="0" fill="#ff292100" layoutX="400.0" layoutY="635.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
         <Circle fx:id="1" fill="#ff292100" layoutX="400.0" layoutY="585.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />
         <Circle fx:id="2" fill="#ff292100" layoutX="400.0" layoutY="535.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />

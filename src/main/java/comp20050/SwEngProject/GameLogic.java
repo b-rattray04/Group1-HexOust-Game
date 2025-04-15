@@ -12,12 +12,39 @@ public class GameLogic {
 
     private AnchorPane rootPane;
     private Color selectedColor;
+    // Global counters for stones
+    private static int blueStoneCount = 0;
+    private static int redStoneCount = 0;
 
     public GameLogic(AnchorPane rootPane) {
         this.rootPane = rootPane;
     }
     public void setSelectedColor(Color color) {
         this.selectedColor = color;
+    }
+
+    // Getter methods for stone counts
+    public static int getBlueStoneCount() {
+        return blueStoneCount;
+    }
+
+    public static int getRedStoneCount() {
+        return redStoneCount;
+    }
+
+    // Reset stone counts (for new games)
+    public static void resetStoneCounts() {
+        blueStoneCount = 0;
+        redStoneCount = 0;
+    }
+
+    // Increment the stone count for the placed color
+    public void incrementStoneCount() {
+        if (selectedColor == Color.BLUE) {
+            blueStoneCount++;
+        } else if (selectedColor == Color.RED) {
+            redStoneCount++;
+        }
     }
 
     public boolean nonCaptureMove(Hexagon hex) {
@@ -71,6 +98,32 @@ public class GameLogic {
             circle.setFill(Color.LIGHTGRAY);
             circle.toBack();
         }
+        
+        // After removing, check if there are still opponent stones on the board
+        checkForWinner();
+    }
+    
+    // Check if there are any opponent stones left on the board
+    public Color checkForWinner() {
+        Color opponentColor = (selectedColor == Color.RED) ? Color.BLUE : Color.RED;
+        boolean opponentStonesExist = false;
+        
+        for (javafx.scene.Node node : rootPane.getChildren()) {
+            if (node instanceof Circle) {
+                Circle circle = (Circle) node;
+                if (circle.getFill() == opponentColor) {
+                    opponentStonesExist = true;
+                    break;
+                }
+            }
+        }
+        
+        // If no opponent stones exist, return the winner's color
+        if (!opponentStonesExist) {
+            return selectedColor;
+        }
+        
+        return null; // No winner yet
     }
 
     private boolean processOpponentGroups(Hexagon hex, Set<Circle> circlesToRemove) {
@@ -79,9 +132,8 @@ public class GameLogic {
         Set<Hexagon> friendlyGroup = new HashSet<>();
         friendlyGroup.add(hex);
         findConnectedGroup(hex, selectedColor, friendlyGroup);
-        int friendlyGroupSize = friendlyGroup.size();
 
-        System.out.println("Friendly group size: " + friendlyGroupSize);
+        System.out.println("Friendly group size: " + friendlyGroup.size());
 
         Set<Hexagon> processedOpponentHexes = new HashSet<>();
         boolean canCapture = false;
@@ -109,10 +161,11 @@ public class GameLogic {
                         findConnectedGroup(adjacentHexagon, opponentColor, opponentGroup);
 
                         processedOpponentHexes.addAll(opponentGroup);                           // Add all to processed set to avoid recounting
-                        int opponentGroupSize = opponentGroup.size();
-                        System.out.println("Opponent group size: " + opponentGroupSize);
+                        
+                        // Remove the log of opponent group size for cleaner output
+                        // System.out.println("Opponent group size: " + opponentGroup.size());
 
-                        if (friendlyGroupSize > opponentGroupSize) {
+                        if (friendlyGroup.size() > opponentGroup.size()) {
                             canCapture = true;
 
                             if (circlesToRemove != null) {

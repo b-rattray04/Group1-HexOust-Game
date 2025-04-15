@@ -37,12 +37,12 @@
                 <Font name="Chalkboard" size="24.0" />
             </font>
         </Label>
-        <Label fx:id="redStoneCountLabel" layoutX="50.0" layoutY="10.0" text="Red Stones: 0" textFill="RED">
+        <Label fx:id="redStoneCountLabel" layoutX="50.0" layoutY="550.0" text="Red Stones: 0" textFill="RED">
             <font>
                 <Font name="Chalkboard" size="16.0" />
             </font>
         </Label>
-        <Label fx:id="blueStoneCountLabel" layoutX="50.0" layoutY="40.0" text="Blue Stones: 0" textFill="BLUE">
+        <Label fx:id="blueStoneCountLabel" layoutX="50.0" layoutY="590.0" text="Blue Stones: 0" textFill="BLUE">
             <font>
                 <Font name="Chalkboard" size="16.0" />
             </font>

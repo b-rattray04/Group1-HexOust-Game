@@ -142,6 +142,7 @@ public class BoardUIController {
         return hex;
     }
 
+
     public static Hexagon splitCoords(String coordString) {
         String[] parts = coordString.split("_");
         int[] values = new int[3];

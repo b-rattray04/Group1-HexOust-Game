@@ -12,6 +12,7 @@
 <AnchorPane fx:id="rootPane" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp20050.SwEngProject.BoardUIController">
     <children>
         <Button fx:id="closeButton" layoutX="695.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#handleClose" text="Press To Quit" />
+        <Button fx:id="resetButton" layoutX="550.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#handleRestart" text="Press To Restart" />
         <Circle fx:id="gameCircle" fill="RED" layoutX="400.0" layoutY="710.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
         <TextFlow prefHeight="50.0" prefWidth="300.0" textAlignment="CENTER">
             <children>
@@ -37,14 +38,14 @@
                 <Font name="Chalkboard" size="24.0" />
             </font>
         </Label>
-        <Label fx:id="redStoneCountLabel" layoutX="50.0" layoutY="550.0" text="Red Stones: 0" textFill="RED">
+        <Label fx:id="redCounter" layoutX="535.0" layoutY="775" text=" ">
             <font>
-                <Font name="Chalkboard" size="16.0" />
+                <Font name="Chalkboard" size="24.0" />
             </font>
         </Label>
-        <Label fx:id="blueStoneCountLabel" layoutX="50.0" layoutY="590.0" text="Blue Stones: 0" textFill="BLUE">
+        <Label fx:id="blueCounter" layoutX="535.0" layoutY="800" text=" ">
             <font>
-                <Font name="Chalkboard" size="16.0" />
+                <Font name="Chalkboard" size="24.0" />
             </font>
         </Label>
         <Circle fx:id="0" fill="#ff292100" layoutX="400.0" layoutY="635.5" radius="17" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.1" />

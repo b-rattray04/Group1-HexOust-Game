@@ -2,10 +2,7 @@ package comp20050.SwEngProject;
 
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -13,21 +10,27 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Polygon;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
-import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 public class BoardUIController {
     private Color selectedColor = Color.RED;
     private boolean redTurn = true;
     private GameLogic gameLogic;
+
+    private int redPlacementCounter = 0;
+    private int bluePlacementCounter = 0;
+    boolean gameStarted = false;
+
     @FXML
     private AnchorPane rootPane;
     @FXML
     private Button closeButton;
+    @FXML
+    private Button restartButton;
     @FXML
     private Circle gameCircle;
     @FXML
@@ -37,14 +40,20 @@ public class BoardUIController {
     @FXML
     private Label invalidMove;
     @FXML
-    private Label blueStoneCountLabel;
+    private Label redCounter;
     @FXML
-    private Label redStoneCountLabel;
+    private Label blueCounter;
 
     @FXML
     public void handleClose(MouseEvent event) {
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
+    }
+
+    //havent been able to do anything with this yet
+    @FXML
+    public void handleRestart(MouseEvent mouseEvent) {
+
     }
 
     @FXML
@@ -53,14 +62,14 @@ public class BoardUIController {
         rootPane.getStylesheets().add(css);
 
         // hover effect for quit button
-        closeButton.setOnMouseEntered(e -> {
+        closeButton.setOnMouseEntered(event -> {
             ScaleTransition st = new ScaleTransition(Duration.millis(200), closeButton);
             st.setToX(1.2);
             st.setToY(1.2);
             st.play();
         });
 
-        closeButton.setOnMouseExited(e -> {
+        closeButton.setOnMouseExited(event -> {
             ScaleTransition st = new ScaleTransition(Duration.millis(200), closeButton);
             st.setToX(1.0);
             st.setToY(1.0);
@@ -70,20 +79,7 @@ public class BoardUIController {
         initialiseHex();
         gameLogic = new GameLogic(rootPane);
         gameLogic.setSelectedColor(selectedColor);
-        
-        // Reset stone counts at the start of the game
-        GameLogic.resetStoneCounts();
-        updateStoneCountLabels();
-    }
-    
-    // Update the UI with current stone counts
-    private void updateStoneCountLabels() {
-        if (blueStoneCountLabel != null) {
-            blueStoneCountLabel.setText("Blue Stones: " + GameLogic.getBlueStoneCount());
-        }
-        if (redStoneCountLabel != null) {
-            redStoneCountLabel.setText("Red Stones: " + GameLogic.getRedStoneCount());
-        }
+
     }
 
     private void initialiseHex() {
@@ -124,10 +120,6 @@ public class BoardUIController {
             matchingCircle.toFront();
             if ((matchingCircle.getFill() != Color.BLUE) && (matchingCircle.getFill() != Color.RED)) {
                 matchingCircle.setFill(selectedColor);
-                // Increment stone count when a new stone is placed
-                gameLogic.incrementStoneCount();
-                // Update the stone count labels
-                updateStoneCountLabels();
             }
         }
     }
@@ -141,7 +133,6 @@ public class BoardUIController {
         }
         return hex;
     }
-
 
     public static Hexagon splitCoords(String coordString) {
         String[] parts = coordString.split("_");
@@ -158,48 +149,6 @@ public class BoardUIController {
         return new Hexagon(values[0], values[1], values[2]);
     }
 
-    // Show the winner popup
-    private void showWinnerPopup(Color winnerColor) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("WinnerPopup.fxml"));
-            Parent root = loader.load();
-            
-            // Get the winner label from the FXML
-            Label winnerLabel = (Label) root.lookup("#winnerLabel");
-            
-            // Set the winner message and color
-            String winnerText = winnerColor == Color.RED ? "Red Wins!" : "Blue Wins!";
-            winnerLabel.setText(winnerText);
-            winnerLabel.setTextFill(winnerColor);
-            
-            // Get the close button and set its action
-            Button closePopupButton = (Button) root.lookup("#closeButton");
-            
-            // Create a new stage for the popup
-            Stage popupStage = new Stage();
-            popupStage.initStyle(StageStyle.UNDECORATED);
-            popupStage.initModality(Modality.APPLICATION_MODAL);
-            popupStage.setScene(new Scene(root));
-            
-            // Set up close button action
-            closePopupButton.setOnAction(event -> popupStage.close());
-            
-            // Show the popup
-            popupStage.showAndWait();
-            
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    
-    // Check for a winner and show popup if there is one
-    private void checkForWinnerAndShowPopup() {
-        Color winner = gameLogic.checkForWinner();
-        if (winner != null) {
-            showWinnerPopup(winner);
-        }
-    }
-
     public void onMouseClicked(MouseEvent event) {
         Hexagon hex = showCoords(event);
         if (hex.isOccupied()) {
@@ -211,26 +160,78 @@ public class BoardUIController {
 
         if (gameLogic.nonCaptureMove(hex)) {
             hex.setOccupied(true);
-            invalidMove.setText("Non-Capture Move");
             changeColor(event);
+            invalidMove.setText("Non-Capture Move");
+
+            if (selectedColor == Color.RED) {
+                redPlacementCounter++;
+            } else bluePlacementCounter++;
+
+            updateStoneCounters();
+
+            // Check if both players have placed at least one stone
+            if (!gameStarted && redPlacementCounter >= 1 && bluePlacementCounter >= 1) {
+                gameStarted = true;
+            }
+
+            // Only check win condition after the game has "officially" started
+            if (gameStarted) {
+                checkWinCondition();
+            }
+
             changePlayer();
         }
         else if (!gameLogic.nonCaptureMove(hex) && gameLogic.validCapture(hex)) {
             hex.setOccupied(true);
             invalidMove.setText("Capture Move");
             changeColor(event);
-            gameLogic.removeCircles(hex);
-            
-            // Check for winner after a capture move
-            checkForWinnerAndShowPopup();
-            
-            // Only change player if there's no winner
-            if (gameLogic.checkForWinner() == null) {
-                changePlayer();
+
+            if (selectedColor == Color.RED) {
+                redPlacementCounter++;
+            } else bluePlacementCounter++;
+
+
+
+            Set<Circle> circlesToRemove = new HashSet<>();
+            gameLogic.removeCircles(hex, circlesToRemove);
+
+            int capturedStones = circlesToRemove.size();
+            if (selectedColor == Color.RED) {
+                bluePlacementCounter -= capturedStones;
+            } else {
+                redPlacementCounter -= capturedStones;
             }
+
+            updateStoneCounters();
+            checkWinCondition();
         }
         else {
             invalidMove.setText("Not a valid move");
         }
     }
+
+    private void updateStoneCounters() {
+        redCounter.setText("Red: " + redPlacementCounter);
+        blueCounter.setText("Blue: " + bluePlacementCounter);
+    }
+
+    private void checkWinCondition() {
+        if (bluePlacementCounter <= 0) {
+            gameFlag.setText("Red Wins!");
+            disableFurtherMoves();
+        }
+        else if (redPlacementCounter <= 0) {
+            gameFlag.setText("Blue Wins!");
+            disableFurtherMoves();
+        }
+    }
+
+    private void disableFurtherMoves() {
+        for (Node node : rootPane.getChildren()) {
+            if (node instanceof Polygon) {
+                node.setDisable(true);
+            }
+        }
+    }
+
 }

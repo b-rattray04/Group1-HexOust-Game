@@ -2,6 +2,7 @@ package comp20050.SwEngProject;
 
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -10,11 +11,15 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Polygon;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+
 
 public class BoardUIController {
     private Color selectedColor = Color.RED;
@@ -30,7 +35,7 @@ public class BoardUIController {
     @FXML
     private Button closeButton;
     @FXML
-    private Button restartButton;
+    private Button resetButton;
     @FXML
     private Circle gameCircle;
     @FXML
@@ -50,10 +55,79 @@ public class BoardUIController {
         stage.close();
     }
 
-    //havent been able to do anything with this yet
     @FXML
     public void handleRestart(MouseEvent mouseEvent) {
+        if(gameFlag.getText().contains("WINS")) {
+            resetGame();
+        } else {
+            boolean confirm = Utilities.showConfirmationDialog(
+                    "Reset Game",
+                    "Are you sure you want to reset the game?\nAll progress will be lost."
+            );
 
+            if (confirm) {
+                resetGame();
+            }
+        }
+
+    }
+
+    @FXML
+    private void resetGame() {
+        // 1. Reset all game state variables
+        selectedColor = Color.RED;
+        redTurn = true;
+        gameStarted = false;
+        redPlacementCounter = 0;
+        bluePlacementCounter = 0;
+
+        // 2. Reset UI text elements
+        gameFlag.setText("Red To Play");
+        gameFlag.setFont(Font.font("Chalkboard", 24));
+        gameFlag.setLayoutX(335); // Adjust to your original position
+        for(Node node : rootPane.getChildren()) {
+            if (node instanceof Label && node != gameFlag) {
+                ((Label) node).setText(" ");
+                ((Label) node).setTextFill(Color.BLACK);
+            }
+        }
+        gameFlag.setTextFill(Color.BLACK); // Reset text color
+        gameCircle.setFill(Color.RED);
+        gameCircle.toFront();
+        invalidMove.setText("");
+        Coords.setText("");
+        updateStoneCounters();
+
+        // Create temporary list to avoid concurrent modification
+        List<Node> circles = new ArrayList<>();
+        for (Node node : rootPane.getChildren()) {
+            if (node instanceof Circle && node != gameCircle) {
+                circles.add(node);
+            }
+        }
+
+        rootPane.getChildren().removeAll(circles);
+        rootPane.getChildren().addAll(0, circles);
+
+        for (Node node : circles) {
+            ((Circle)node).setFill(Color.LIGHTGRAY);
+        }
+
+        for(Node node : rootPane.getChildren()) {
+            if(node instanceof Polygon) {
+                Polygon hexagon = (Polygon) node;
+                //get the hexagon object
+                Hexagon hex = (Hexagon) hexagon.getUserData();
+                hex.setUnoccupied(true);
+                node.setDisable(false);
+            }
+        }
+
+        gameLogic = new GameLogic(rootPane);
+        gameLogic.setSelectedColor(selectedColor);
+
+        //UI refresh
+        rootPane.requestLayout();
     }
 
     @FXML
@@ -71,6 +145,21 @@ public class BoardUIController {
 
         closeButton.setOnMouseExited(event -> {
             ScaleTransition st = new ScaleTransition(Duration.millis(200), closeButton);
+            st.setToX(1.0);
+            st.setToY(1.0);
+            st.play();
+        });
+
+        // hover effect for restart button
+        resetButton.setOnMouseEntered(event -> {
+            ScaleTransition st = new ScaleTransition(Duration.millis(200), resetButton);
+            st.setToX(1.2);
+            st.setToY(1.2);
+            st.play();
+        });
+
+        resetButton.setOnMouseExited(event -> {
+            ScaleTransition st = new ScaleTransition(Duration.millis(200), resetButton);
             st.setToX(1.0);
             st.setToY(1.0);
             st.play();
@@ -217,11 +306,29 @@ public class BoardUIController {
 
     private void checkWinCondition() {
         if (bluePlacementCounter <= 0) {
-            gameFlag.setText("Red Wins!");
+            for(Node node : rootPane.getChildren()) {
+                if (node instanceof Label) {
+                    ((Label) node).setText(" ");
+                    ((Label) node).setTextFill(Color.RED);
+                }
+            }
+            gameCircle.toBack();
+            gameFlag.setFont(new Font(50));
+            gameFlag.setLayoutX(295);
+            gameFlag.setText("RED WINS!");
             disableFurtherMoves();
         }
         else if (redPlacementCounter <= 0) {
-            gameFlag.setText("Blue Wins!");
+            for(Node node : rootPane.getChildren()) {
+                if (node instanceof Label) {
+                    ((Label) node).setText(" ");
+                    ((Label) node).setTextFill(Color.BLUE);
+                }
+            }
+            gameCircle.toBack();
+            gameFlag.setFont(new Font(50));
+            gameFlag.setLayoutX(285);
+            gameFlag.setText("BLUE WINS!");
             disableFurtherMoves();
         }
     }

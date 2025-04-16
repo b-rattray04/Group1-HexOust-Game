@@ -4,8 +4,29 @@ import javafx.scene.Node;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Circle;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Alert.AlertType;
+
 
 public class Utilities {
+
+    public static boolean showConfirmationDialog(String title, String message) {
+        Alert alert = new Alert(AlertType.CONFIRMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+
+        // Customize button text if needed
+        ButtonType yesButton = new ButtonType("Yes");
+        ButtonType noButton = new ButtonType("No");
+        alert.getButtonTypes().setAll(yesButton, noButton);
+
+        // Show dialog and wait for response
+        java.util.Optional<ButtonType> result = alert.showAndWait();
+        return result.isPresent() && result.get() == yesButton;
+    }
+
 
     public static Polygon getHexagonNode(AnchorPane rootPane, int q, int r, int s) {
         for (Node node : rootPane.getChildren()) {

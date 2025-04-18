@@ -41,4 +41,18 @@ public class TestHexagon {
         assertEquals(6, hex.getS());
     }
 
+    @Test
+    public void testSetOccupied() {
+        Hexagon hex = new Hexagon(1, -1, 0);
+        hex.setOccupied(true);
+        assert(hex.isOccupied());
+    }
+
+    @Test
+    public void testSetUnoccupied() {
+        Hexagon hex = new Hexagon(1, -1, 0);
+        hex.setOccupied(true);
+        hex.setUnoccupied(false);
+        assert(!hex.isOccupied());
+    }
 }

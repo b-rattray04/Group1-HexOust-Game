@@ -143,8 +143,7 @@ public class GameLogic {
         return canCapture;
     }
 
-
-    private void findConnectedGroup(Hexagon hex, Color color, Set<Hexagon> group) {
+    public void findConnectedGroup(Hexagon hex, Color color, Set<Hexagon> group) {
         group.add(hex);
 
         for (Hexagon dir : Hexagon.directions) {

@@ -19,52 +19,41 @@ public class GameLogic {
     public void setSelectedColor(Color color) {
         this.selectedColor = color;
     }
-    public boolean nonCaptureMove(Hexagon hex) {
-        int blueCount = 0;      //not including stone being placed
+
+    private int[] countAdjacentColors(Hexagon hex) {
+        int blueCount = 0;
         int redCount = 0;
 
         for (Hexagon dir : Hexagon.directions) {
-            int q = hex.getQ() + dir.getQ();
-            int r = hex.getR() + dir.getR();
-            int s = hex.getS() + dir.getS();
-            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
-
-            if(adjacentHex == null) continue;
-            Circle adjacentCircle = Utilities.findCircleByCoords(
-                    rootPane,
-                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
-                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
-            );
-
+            Circle adjacentCircle = getAdjacentCircle(hex, dir);
             if (adjacentCircle != null) {
-                Color adjacentColor = (Color) adjacentCircle.getFill();
-                if (adjacentColor == Color.RED) redCount++;
-                if (adjacentColor == Color.BLUE) blueCount++;
-
+                Color color = (Color) adjacentCircle.getFill();
+                if (color == Color.RED) redCount++;
+                if (color == Color.BLUE) blueCount++;
             }
         }
+        return new int[]{redCount, blueCount};
+    }
+
+    public boolean nonCaptureMove(Hexagon hex) {
+        int[] counts = countAdjacentColors(hex);
+        int redCount = counts[0];
+        int blueCount = counts[1];
 
         System.out.println("Red: " + redCount +  " | Blue: " + blueCount);
 
-        if(blueCount == 0 && redCount == 0) { //if no immediate neighbours => non capture move
-            return true;
-        }
-
-        if(selectedColor == Color.RED) {
-            return redCount == 0;
-        } else if(selectedColor == Color.BLUE) {
-            return blueCount == 0;
-        }
-        return false;
+        if (redCount == 0 && blueCount == 0) return true;
+        return selectedColor == Color.RED ? redCount == 0 : blueCount == 0;
     }
+
 
     public boolean validCapture(Hexagon hex) {
         return processOpponentGroups(hex, null);
     }
 
     public void removeCircles(Hexagon hexagon, Set<Circle> circlesToRemove) {
+        if (circlesToRemove == null) return;
         processOpponentGroups(hexagon, circlesToRemove);
-
         for (Circle circle : circlesToRemove) {
 
             circle.setFill(Color.LIGHTGRAY);
@@ -75,11 +64,8 @@ public class GameLogic {
     private boolean processOpponentGroups(Hexagon hex, Set<Circle> circlesToRemove) {
         Color opponentColor = (selectedColor == Color.RED) ? Color.BLUE : Color.RED;
 
-        Set<Hexagon> friendlyGroup = new HashSet<>();
-        friendlyGroup.add(hex);
-        findConnectedGroup(hex, selectedColor, friendlyGroup);
+        Set<Hexagon> friendlyGroup = getConnectedGroup(hex, selectedColor);
         int friendlyGroupSize = friendlyGroup.size();
-
         System.out.println("Friendly group size: " + friendlyGroupSize);
 
         Set<Hexagon> processedOpponentHexes = new HashSet<>();
@@ -87,86 +73,83 @@ public class GameLogic {
 
         for (Hexagon friendlyHex : friendlyGroup) {
             for (Hexagon dir : Hexagon.directions) {
-                int q = friendlyHex.getQ() + dir.getQ();
-                int r = friendlyHex.getR() + dir.getR();
-                int s = friendlyHex.getS() + dir.getS();
+                Hexagon neighbour = getHexagonFromDirection(friendlyHex, dir);
+                if (neighbour == null || processedOpponentHexes.contains(neighbour)) continue;
 
-                Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
-                if (adjacentHex == null) continue;
+                Circle circle = getCircleFromHex(neighbour);
 
-                Circle adjacentCircle = Utilities.findCircleByCoords(
-                        rootPane,
-                        adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
-                        adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
-                );
+                if (circle != null && circle.getFill() == opponentColor) {
+                    Set<Hexagon> opponentGroup = getConnectedGroup(neighbour, opponentColor);
+                    processedOpponentHexes.addAll(opponentGroup);
+                    int opponentGroupSize = opponentGroup.size();
+                    System.out.println("Opponent group size: " + opponentGroupSize);
 
-                if (adjacentCircle != null && adjacentCircle.getFill() == opponentColor) {
-                    Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
-
-                    if (!processedOpponentHexes.contains(adjacentHexagon)) {
-                        Set<Hexagon> opponentGroup = new HashSet<>();
-                        findConnectedGroup(adjacentHexagon, opponentColor, opponentGroup);
-
-                        processedOpponentHexes.addAll(opponentGroup);                           // Add all to processed set to avoid recounting
-                        int opponentGroupSize = opponentGroup.size();
-                        System.out.println("Opponent group size: " + opponentGroupSize);
-
-                        if (friendlyGroupSize > opponentGroupSize) {
-                            canCapture = true;
-
-                            if (circlesToRemove != null) {
-                                for (Hexagon capturedHex : opponentGroup) {
-                                    Polygon hexPolygon = Utilities.getHexagonNode(rootPane,
-                                            capturedHex.getQ(), capturedHex.getR(), capturedHex.getS());
-                                    if (hexPolygon != null) {
-                                        Circle circle = Utilities.findCircleByCoords(
-                                                rootPane,
-                                                hexPolygon.getLayoutX() + hexPolygon.getTranslateX(),
-                                                hexPolygon.getLayoutY() + hexPolygon.getTranslateY()
-                                        );
-                                        if (circle != null && circle.getFill() == opponentColor) {
-                                            circlesToRemove.add(circle);
-                                            capturedHex.setUnoccupied(false);
-                                        }
-                                    }
-                                }
-                            } else {
-                                // If we're just checking for validity, we can return early
-                                return true;
-                            }
+                    if (friendlyGroupSize > opponentGroupSize) {
+                        canCapture = true;
+                        if (circlesToRemove != null) {
+                            captureOpponentGroup(opponentGroup, opponentColor, circlesToRemove);
+                        } else {
+                            return true;
                         }
                     }
                 }
             }
         }
-
         return canCapture;
+    }
+
+    private void captureOpponentGroup(Set<Hexagon> group, Color color, Set<Circle> captured) {
+        for (Hexagon hex : group) {
+            Circle circle = getCircleFromHex(hex);
+            if (circle != null && circle.getFill() == color) {
+                captured.add(circle);
+                hex.setUnoccupied(false);
+            }
+        }
+    }
+
+    private Set<Hexagon> getConnectedGroup(Hexagon start, Color color) {
+        Set<Hexagon> group = new HashSet<>();
+        findConnectedGroup(start, color, group);
+        return group;
     }
 
     public void findConnectedGroup(Hexagon hex, Color color, Set<Hexagon> group) {
         group.add(hex);
 
         for (Hexagon dir : Hexagon.directions) {
-            int q = hex.getQ() + dir.getQ();
-            int r = hex.getR() + dir.getR();
-            int s = hex.getS() + dir.getS();
-            Polygon adjacentHex = Utilities.getHexagonNode(rootPane, q, r, s);
+            Hexagon neighbour = getHexagonFromDirection(hex, dir);
+            if (neighbour == null || group.contains(neighbour)) {
+                continue;
+            }
+            Circle circle = getCircleFromHex(neighbour);
 
-            if (adjacentHex == null) continue;
-
-            Hexagon adjacentHexagon = (Hexagon) adjacentHex.getUserData();
-            if (group.contains(adjacentHexagon)) continue;      // Skip already visited hexagons
-
-            Circle adjacentCircle = Utilities.findCircleByCoords(
-                    rootPane,
-                    adjacentHex.getLayoutX() + adjacentHex.getTranslateX(),
-                    adjacentHex.getLayoutY() + adjacentHex.getTranslateY()
-            );
-
-            if (adjacentCircle != null && adjacentCircle.getFill() == color) {
-                findConnectedGroup(adjacentHexagon, color, group);
+            if (circle != null && circle.getFill() == color) {
+                findConnectedGroup(neighbour, color, group);
             }
         }
     }
 
+    private Hexagon getHexagonFromDirection(Hexagon center, Hexagon direction) {
+        int q = center.getQ() + direction.getQ();
+        int r = center.getR() + direction.getR();
+        int s = center.getS() + direction.getS();
+        Polygon hexPolygon = Utilities.getHexagonNode(rootPane, q, r, s);
+        return (hexPolygon != null) ? (Hexagon) hexPolygon.getUserData() : null;
+    }
+
+    private Circle getCircleFromHex(Hexagon hex) {
+        Polygon polygon = Utilities.getHexagonNode(rootPane, hex.getQ(), hex.getR(), hex.getS());
+        if (polygon == null) return null;
+        return Utilities.findCircleByCoords(
+                rootPane,
+                polygon.getLayoutX() + polygon.getTranslateX(),
+                polygon.getLayoutY() + polygon.getTranslateY()
+        );
+    }
+
+    private Circle getAdjacentCircle(Hexagon center, Hexagon direction) {
+        Hexagon neighbor = getHexagonFromDirection(center, direction);
+        return neighbor != null ? getCircleFromHex(neighbor) : null;
+    }
 }

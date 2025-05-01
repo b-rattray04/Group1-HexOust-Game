@@ -34,6 +34,23 @@ public class TestGameLogic {
         gameLogic = new GameLogic(mockRootPane);
     }
 
+    private void placeHexagon(AnchorPane rootPane, Hexagon hex, Color color) {
+        Polygon polygon = new Polygon();
+        polygon.setUserData(hex);
+        polygon.setLayoutX(100 + 50 * hex.getQ());
+        polygon.setLayoutY(100 + 50 * hex.getR());
+
+        Circle circle = new Circle(10);
+        circle.setFill(color);
+        circle.setLayoutX(polygon.getLayoutX());
+        circle.setLayoutY(polygon.getLayoutY());
+
+        circle.setId(hex.getQ() + "_" + hex.getR() + "_" + hex.getS());
+
+        rootPane.getChildren().addAll(polygon, circle);
+    }
+
+
     @Test
     public void testNoAdjacentStonesNCP() {
         Hexagon hex = new Hexagon(0, 0, 0);
@@ -67,4 +84,53 @@ public class TestGameLogic {
         assertTrue(circlesToRemove.contains(opponentCircle));
         assertEquals(Color.LIGHTGRAY, opponentCircle.getFill());
     }
+
+    @Test
+    public void testSingleHexGroup() {
+        Hexagon hex = new Hexagon(0, 0, 0);
+        gameLogic.setSelectedColor(Color.RED);
+
+        Set<Hexagon> group = gameLogic.getConnectedGroup(hex, Color.RED);
+        assertTrue(group.contains(hex));
+    }
+
+    @Test
+    public void testConnectedGroup() {
+        AnchorPane rootPane = new AnchorPane();
+        gameLogic = new GameLogic(rootPane);
+        gameLogic.setSelectedColor(Color.RED);
+
+        Hexagon hex1 = new Hexagon(0, 0, 0);
+        Hexagon hex2 = new Hexagon(1, -1, 0);
+        Hexagon hex3 = new Hexagon(2, -2, 0); // not connected to group
+
+        placeHexagon(rootPane, hex1, Color.RED);
+        placeHexagon(rootPane, hex2, Color.RED);
+
+        Set<Hexagon> group = gameLogic.getConnectedGroup(hex1, Color.RED);
+
+        assertEquals(2, group.size());
+        assertTrue(group.contains(hex1));
+        assertTrue(group.contains(hex2));
+        assertFalse(group.contains(hex3));
+    }
+
+    @Test
+    public void testValidCaptureRealNodes() {
+        AnchorPane rootPane = new AnchorPane();
+        gameLogic = new GameLogic(rootPane);
+        gameLogic.setSelectedColor(Color.RED);
+
+        Hexagon red1 = new Hexagon(0, 0, 0);
+        Hexagon red2 = new Hexagon(1, -1, 0);
+        Hexagon blue = new Hexagon(1, 0, -1);
+
+        placeHexagon(rootPane, red1, Color.RED);
+        placeHexagon(rootPane, red2, Color.RED);
+        placeHexagon(rootPane, blue, Color.BLUE);
+
+        boolean canCapture = gameLogic.validCapture(red1);
+        assertTrue(canCapture);
+    }
+
 }

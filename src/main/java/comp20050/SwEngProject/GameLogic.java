@@ -154,7 +154,7 @@ public class GameLogic {
             Circle circle = getCircleFromHex(hex);
             if (circle != null && circle.getFill() == color) {
                 captured.add(circle);
-                hex.setUnoccupied(false);
+                hex.setUnoccupied(true);
             }
         }
     }
@@ -202,7 +202,7 @@ public class GameLogic {
      * @param direction direction to look in
      * @return returns the hexagon, null if not found
      */
-    private Hexagon getHexagonFromDirection(Hexagon center, Hexagon direction) {
+    protected Hexagon getHexagonFromDirection(Hexagon center, Hexagon direction) {
         int q = center.getQ() + direction.getQ();
         int r = center.getR() + direction.getR();
         int s = center.getS() + direction.getS();
@@ -216,7 +216,7 @@ public class GameLogic {
      * @param hex   hexagon we want to check
      * @return  returns circle at the given coordinates, null if not found
      */
-    private Circle getCircleFromHex(Hexagon hex) {
+    protected Circle getCircleFromHex(Hexagon hex) {
         Polygon polygon = Utilities.getHexagonNode(rootPane, hex.getQ(), hex.getR(), hex.getS());
         if (polygon == null) return null;
         return Utilities.findCircleByCoords(

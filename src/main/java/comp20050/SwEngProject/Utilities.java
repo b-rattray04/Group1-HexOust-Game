@@ -34,7 +34,6 @@ public class Utilities {
         return result.isPresent() && result.get() == yesButton;
     }
 
-
     /**
      * searches for a polygon on the board based on coordinates
      *

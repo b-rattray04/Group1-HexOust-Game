@@ -133,4 +133,87 @@ public class TestGameLogic {
         assertTrue(canCapture);
     }
 
+    @Test
+    public void testInvalidNCP() {
+        AnchorPane rootPane = new AnchorPane();
+        gameLogic = new GameLogic(rootPane);
+        gameLogic.setSelectedColor(Color.RED);
+
+        Hexagon hex = new Hexagon(0, 0, 0);
+        Hexagon adjacent = new Hexagon(1, -1, 0);
+
+        Polygon polygon = new Polygon();
+        polygon.setUserData(adjacent);
+        polygon.setLayoutX(150);
+        polygon.setLayoutY(100);
+        rootPane.getChildren().add(polygon);
+
+        Circle red = new Circle(10);
+        red.setFill(Color.RED);
+        red.setLayoutX(polygon.getLayoutX());
+        red.setLayoutY(polygon.getLayoutY());
+        red.setId(adjacent.getQ() + "_" + adjacent.getR() + "_" + adjacent.getS());
+        rootPane.getChildren().add(red);
+
+        boolean isValidMove = gameLogic.nonCaptureMove(hex);
+        assertFalse(isValidMove);
+    }
+
+    @Test
+    public void testInvalidCP() {
+        Hexagon hex = new Hexagon(0, 0, 0);
+        gameLogic.setSelectedColor(Color.RED);
+
+        for (Hexagon dir : Hexagon.directions) {
+            when(Utilities.getHexagonNode(mockRootPane, hex.getQ() + dir.getQ(),
+                    hex.getR() + dir.getR(), hex.getS() + dir.getS())).thenReturn(null);
+        }
+
+        boolean canCapture = gameLogic.validCapture(hex);
+        assertFalse(canCapture);
+    }
+
+    @Test
+    public void testCPLogic() {
+        AnchorPane rootPane = new AnchorPane();
+        GameLogic gameLogic = new GameLogic(rootPane);
+        gameLogic.setSelectedColor(Color.RED);
+
+        Hexagon red1 = new Hexagon(0, 0, 0);
+        Hexagon red2 = new Hexagon(1, -1, 0);
+
+        Polygon redPolygon1 = new Polygon(); redPolygon1.setUserData(red1);
+        Polygon redPolygon2 = new Polygon(); redPolygon2.setUserData(red2);
+        redPolygon1.setLayoutX(100); redPolygon1.setLayoutY(100);
+        redPolygon2.setLayoutX(150); redPolygon2.setLayoutY(50);
+
+        Circle redCircle1 = new Circle(10); redCircle1.setFill(Color.RED);
+        Circle redCircle2 = new Circle(10); redCircle2.setFill(Color.RED);
+        redCircle1.setLayoutX(100); redCircle1.setLayoutY(100);
+        redCircle2.setLayoutX(150); redCircle2.setLayoutY(50);
+
+        redCircle1.setId(red1.getQ() + "_" + red1.getR() + "_" + red1.getS());
+        redCircle2.setId(red2.getQ() + "_" + red2.getR() + "_" + red2.getS());
+
+        Hexagon blue = new Hexagon(1, 0, -1);
+        Polygon bluePolygon = new Polygon(); bluePolygon.setUserData(blue);
+        bluePolygon.setLayoutX(125); bluePolygon.setLayoutY(75);
+
+        Circle blueCircle = new Circle(10); blueCircle.setFill(Color.BLUE);
+        blueCircle.setLayoutX(125); blueCircle.setLayoutY(75);
+        blueCircle.setId(blue.getQ() + "_" + blue.getR() + "_" + blue.getS());
+
+        rootPane.getChildren().addAll(
+                redPolygon1, redCircle1,
+                redPolygon2, redCircle2,
+                bluePolygon, blueCircle
+        );
+
+        Set<Circle> captured = new HashSet<>();
+        gameLogic.removeCircles(red1, captured);
+
+        assertTrue(captured.contains(blueCircle));
+        assertEquals(Color.LIGHTGRAY, blueCircle.getFill());
+    }
+
 }

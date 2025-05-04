@@ -85,7 +85,6 @@ public class TestGameLogic {
         assertEquals(Color.LIGHTGRAY, opponentCircle.getFill());
     }
 
-    /*
     @Test
     public void testSingleHexGroup() {
         Hexagon hex = new Hexagon(0, 0, 0);
@@ -316,8 +315,4 @@ public class TestGameLogic {
         Circle circle = gameLogic.getCircleFromHex(hex);
         assertNull(circle);
     }
-
-     */
-
-
 }
